@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2697064623869510230}
   - component: {fileID: 1481718888890874019}
   - component: {fileID: 6330914217063777583}
+  - component: {fileID: 3480099265584006428}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -79,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1795391113
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -179,4 +180,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 4
+  canActionDoubleJump: 1
   jumpForce: 7
+  canActionDash: 1
+  dashSpeed: 12
+  dashDuration: 0.2
+  dashCooldown: 1
+--- !u!114 &3480099265584006428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2271912347711750881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845d1a44e1d8be4d98845198e031fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
