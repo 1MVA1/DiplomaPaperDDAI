@@ -16,7 +16,10 @@ public class PlayerCollision : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("LevelFinish")) {
+        if (other.CompareTag("Death")) {
+            spawner.KillPlayer(gameObject);
+        }
+        else if (other.CompareTag("LevelFinish")) {
             spawner.FinishLevel();
         }
     }

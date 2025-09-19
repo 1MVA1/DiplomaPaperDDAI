@@ -8,6 +8,8 @@ public class FallingPlatform : MonoBehaviour
     private BoxCollider2D boxCol;
     private PlatformEffector2D effector;
 
+    public Difficulty trapDifficulty = Difficulty.Easy;
+
     public float disapperingDuration = 2f;
     public float apperingDuration = 0.5f;
     public float respawnDelay = 3f;  

@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Jump Settings")]
     public bool canActionDoubleJump = true;
     public float jumpForce = 7f;
-    private bool isGrounded = false;
+    public bool isGrounded = false;
     private bool isTouchingGround = false;
     private bool canDoubleJump = true;
 

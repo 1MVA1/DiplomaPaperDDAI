@@ -37,8 +37,9 @@ public class PlatformDownLogic : MonoBehaviour
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-            if (player != null)
+            if (player != null) {
                 playerCollider = player.GetComponent<BoxCollider2D>();
+            }
         }
     }
 
@@ -48,6 +49,10 @@ public class PlatformDownLogic : MonoBehaviour
 
         do
         {
+            if (playerCollider == null) {
+                yield break;
+            }
+
             hits = Physics2D.OverlapBoxAll(platformCollider.bounds.center, platformCollider.bounds.size, 0f);
 
             bool playerInside = false;
@@ -68,7 +73,9 @@ public class PlatformDownLogic : MonoBehaviour
         }
         while (true);
 
-        Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
+        if (playerCollider != null) {
+            Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
+        }
     }
 
     void OnEnable() => inputActions.Enable();
