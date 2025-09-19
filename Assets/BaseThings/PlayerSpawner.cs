@@ -34,7 +34,7 @@ public class PlayerSpawner : MonoBehaviour
 
     private IEnumerator RespawnRoutine()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(respawnTime);
 
         currentPlayer = Instantiate(playerPrefab, transform.position, Quaternion.identity);
 

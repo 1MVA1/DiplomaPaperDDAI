@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - StaticPlatform
-  - World
   - LevelFinish
+  - Death
+  - Platform
   layers:
   - Default
   - TransparentFX

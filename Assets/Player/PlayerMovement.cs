@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public bool canActionDoubleJump = true;
     public float jumpForce = 7f;
     private bool isGrounded = false;
+    private bool isTouchingGround = false;
     private bool canDoubleJump = true;
 
     [Header("Dash Settings")]
@@ -56,6 +57,17 @@ public class PlayerMovement : MonoBehaviour
         };
     }
 
+    void Update()
+    {
+        if (isGrounded && rb.linearVelocity.y < 0.0) {
+            isGrounded = false;
+        }
+        else if (!isGrounded && rb.linearVelocity.y == 0.0 && isTouchingGround)
+        {
+            isGrounded = true;
+            canDoubleJump = true;
+        }
+    }
     void FixedUpdate()
     {
         if (!isDashing) {
@@ -84,17 +96,15 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("StaticPlatform"))
-        {
-            isGrounded = true;
-            canDoubleJump = true;
+        if (collision.gameObject.CompareTag("Platform")) {
+            isTouchingGround = true;
         }
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("StaticPlatform")) {
-            isGrounded = false;
+        if (collision.gameObject.CompareTag("Platform")) {
+            isTouchingGround = false;
         }
     }
 
