@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3250930352731626127}
   - component: {fileID: 7990299526191970949}
-  - component: {fileID: 7640324816475378653}
   - component: {fileID: 5292090806584075253}
+  - component: {fileID: 7640324816475378653}
   m_Layer: 0
   m_Name: Saw
   m_TagString: Death
@@ -92,21 +92,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7640324816475378653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8737821912250870422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 823d98359fe724640999f5f77d733a6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Saw
-  waypoints: []
-  speed: 4
-  rotationSpeed: 180
 --- !u!61 &5292090806584075253
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -153,3 +138,30 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7640324816475378653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8737821912250870422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 823d98359fe724640999f5f77d733a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Saw
+  difficulty: 0
+  diffEasy:
+    speed: 2
+    acceleration: 0
+    maxSpeed: 0
+  diffMedium:
+    speed: 3
+    acceleration: 0
+    maxSpeed: 0
+  diffHard:
+    speed: 4
+    acceleration: 0.5
+    maxSpeed: 6
+  waypoints: []
+  rotationSpeed: 180

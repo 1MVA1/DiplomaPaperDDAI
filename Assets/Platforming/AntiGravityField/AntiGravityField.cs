@@ -2,11 +2,31 @@ using UnityEngine;
 
 public class AntiGravityField : MonoBehaviour
 {
-    public Difficulty trapDifficulty = Difficulty.Easy;
+    public Difficulty difficulty = Difficulty.Easy;
 
-    public float antiGravityScale = -1f;
+    public float antiGravityScaleEasy = 0f;
+    public float antiGravityScaleMedium = -0.25f;
+    public float antiGravityScaleHard = -0.5f;
+
+    private float antiGravityScale;
 
     private float normalGravityScale;
+
+    private void Awake()
+    {
+        switch (difficulty)
+        {
+            case Difficulty.Easy:
+                antiGravityScale = antiGravityScaleEasy;
+                break;
+            case Difficulty.Medium:
+                antiGravityScale = antiGravityScaleMedium;
+                break;
+            case Difficulty.Hard:
+                antiGravityScale = antiGravityScaleHard;
+                break;
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {

@@ -11,16 +11,37 @@ public class MovingPlatform : MonoBehaviour
         public float stopTime = 1f;
     }
 
-    public Difficulty trapDifficulty = Difficulty.Easy;
+    public Difficulty difficulty = Difficulty.Easy;
 
-    public Waypoint[] waypoints;    
-    public float speed = 2f; 
+    public float speedEasy = 2f;
+    public float speedMedium = 3f;
+    public float speedHard = 4f;
+
+    public Waypoint[] waypoints;
+
+    private float speed;
 
     private int currentIndex = 0; 
     private bool isGoingForward = true; 
     private bool isWaiting = false;
 
     private Vector3 lastPosition;
+
+    private void Awake()
+    {
+        switch (difficulty)
+        {
+            case Difficulty.Easy:
+                speed = speedEasy;
+                break;
+            case Difficulty.Medium:
+                speed = speedMedium;
+                break;
+            case Difficulty.Hard:
+                speed = speedHard;
+                break;
+        }
+    }
 
     void Start() {
         lastPosition = transform.position;

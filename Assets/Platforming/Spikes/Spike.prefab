@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5067569667380595254}
   - component: {fileID: 313195991317398349}
   - component: {fileID: 7312701169180936731}
+  - component: {fileID: -373650609984609460}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Death
@@ -137,3 +138,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-373650609984609460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626677924573056720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3f77ace59f2e5644b53b28b47fab95a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spike
+  difficulty: 0
+  scaleEasy: {x: 1, y: 1, z: 1}
+  scaleMedium: {x: 1.2, y: 1.2, z: 1}
+  scaleHard: {x: 1.4, y: 1.4, z: 1}

@@ -8,11 +8,28 @@ public class FallingPlatform : MonoBehaviour
     private BoxCollider2D boxCol;
     private PlatformEffector2D effector;
 
-    public Difficulty trapDifficulty = Difficulty.Easy;
+    [System.Serializable]
+    public class PlatformDiff
+    {
+        public float disappearingDuration;
+        public float respawnDelay;
 
-    public float disapperingDuration = 2f;
-    public float apperingDuration = 0.5f;
-    public float respawnDelay = 3f;  
+        public PlatformDiff(float disappearingDuration, float respawnDelay)
+        {
+            this.disappearingDuration = disappearingDuration;
+            this.respawnDelay = respawnDelay;
+        }
+    }
+
+    public Difficulty difficulty = Difficulty.Easy;
+
+    public PlatformDiff diffEasy = new PlatformDiff(2f, 2f);
+    public PlatformDiff diffMedium = new PlatformDiff(1.5f, 2.5f);
+    public PlatformDiff diffHard = new PlatformDiff(1f, 3f);
+
+    private PlatformDiff currentDiff;
+
+    public float apperingDuration = 0.25f;
 
     private bool isFading = false;
 
@@ -21,6 +38,19 @@ public class FallingPlatform : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         boxCol = GetComponent<BoxCollider2D>();
         effector = GetComponent<PlatformEffector2D>();
+
+        switch (difficulty)
+        {
+            case Difficulty.Easy:
+                currentDiff = diffEasy;
+                break;
+            case Difficulty.Medium:
+                currentDiff = diffMedium;
+                break;
+            case Difficulty.Hard:
+                currentDiff = diffHard;
+                break;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -42,10 +72,10 @@ public class FallingPlatform : MonoBehaviour
         float timer = 0f;
         Color startColor = sr.color;
 
-        while (timer < disapperingDuration)
+        while (timer < currentDiff.disappearingDuration)
         {
             timer += Time.deltaTime;
-            sr.color = new Color(startColor.r, startColor.g, startColor.b, Mathf.Lerp(1f, 0f, timer / disapperingDuration));
+            sr.color = new Color(startColor.r, startColor.g, startColor.b, Mathf.Lerp(1f, 0f, timer / currentDiff.disappearingDuration));
 
             yield return null;
         }
@@ -54,7 +84,7 @@ public class FallingPlatform : MonoBehaviour
         effector.enabled = false;
 
         // Step 2
-        yield return new WaitForSeconds(respawnDelay);
+        yield return new WaitForSeconds(currentDiff.respawnDelay);
 
         Collider2D[] hits;
 
