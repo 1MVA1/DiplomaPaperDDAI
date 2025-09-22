@@ -109,7 +109,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 1
-  m_SurfaceArc: 180
+  m_SurfaceArc: 179
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
@@ -183,6 +183,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b812800d00af140b2d68c26b1ce170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FallingPlatform
-  disapperingDuration: 2
+  difficulty: 0
+  diffEasy:
+    disappearingDuration: 2
+    respawnDelay: 2
+  diffMedium:
+    disappearingDuration: 1.5
+    respawnDelay: 2.5
+  diffHard:
+    disappearingDuration: 1
+    respawnDelay: 3
   apperingDuration: 0.5
-  respawnDelay: 3
