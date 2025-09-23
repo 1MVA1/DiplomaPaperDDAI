@@ -8,6 +8,7 @@ TagManager:
   - Death
   - Platform
   - Wall
+  - DoubleJump
   layers:
   - Default
   - TransparentFX

@@ -80,6 +80,17 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
+    void Update()
+    {
+        if (isGrounded && rb.linearVelocity.y < 0.0) {
+            isGrounded = false;
+        }
+        else if (!isGrounded && rb.linearVelocity.y == 0.0 && isTouchingGround)
+        {
+            isGrounded = true;
+            canDoubleJump = true;
+        }
+    }
 
     void FixedUpdate()
     {
@@ -129,11 +140,8 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Platform"))
-        {
+        if (collision.gameObject.CompareTag("Platform")) {
             isTouchingGround = true;
-            isGrounded = true;
-            canDoubleJump = true;
         }
 
         if (collision.gameObject.CompareTag("Wall"))
@@ -167,6 +175,13 @@ public class PlayerMovement : MonoBehaviour
             isTouchingWall = false;
             wallDirection = 0;
             isWallSliding = false;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other) 
+    {
+        if (other.gameObject.CompareTag("DoubleJump")) {
+            canDoubleJump = true;
         }
     }
 
