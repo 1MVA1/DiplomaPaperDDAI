@@ -19,6 +19,7 @@ public class VoltZone : MonoBehaviour
         }
     }
 
+    [Header("Difficulty Settings")]
     public Difficulty difficulty = Difficulty.Easy;
 
     public VoltZoneDiff diffEasy = new VoltZoneDiff(3f, 1.25f, 1.5f);

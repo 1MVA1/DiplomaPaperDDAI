@@ -20,6 +20,7 @@ public class Landmine : MonoBehaviour
         }
     }
 
+    [Header("Difficulty Settings")]
     public Difficulty difficulty = Difficulty.Easy;
 
     public BombDiff diffEasy = new BombDiff(3f, 4f, 2.25f);
@@ -28,6 +29,7 @@ public class Landmine : MonoBehaviour
 
     private BombDiff currentDiff;
 
+    [Header("Platform logic")]
     public float disappearDelay = 0.5f;       
 
     private bool isActivated = false;
@@ -62,16 +64,19 @@ public class Landmine : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isActivated)
+        if (other.CompareTag("Player"))
         {
-            isActivated = true;
+            if (!isActivated)
+            {
+                isActivated = true;
 
-            activationCollider.enabled = false;
-            gameObject.tag = "Death";
+                activationCollider.enabled = false;
+                gameObject.tag = "DeathTrigger";
 
-            Debug.Log("Tick");
+                Debug.Log("Tick");
 
-            Invoke(nameof(Explode), currentDiff.explosionDelay);
+                Invoke(nameof(Explode), currentDiff.explosionDelay);
+            }
         }
     }
 

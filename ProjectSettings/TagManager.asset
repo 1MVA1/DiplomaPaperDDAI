@@ -9,6 +9,7 @@ TagManager:
   - Platform
   - Wall
   - DoubleJump
+  - DeathTrigger
   layers:
   - Default
   - TransparentFX

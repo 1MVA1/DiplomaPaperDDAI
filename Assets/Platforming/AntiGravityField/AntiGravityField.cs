@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class AntiGravityField : MonoBehaviour
 {
+    [Header("Difficulty Settings")]
     public Difficulty difficulty = Difficulty.Easy;
 
     public float antiGravityScaleEasy = 0f;

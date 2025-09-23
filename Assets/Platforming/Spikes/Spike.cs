@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Spike : MonoBehaviour
 {
+    [Header("Difficulty Settings")]
     public Difficulty difficulty = Difficulty.Easy;
 
     public Vector3 scaleEasy = new Vector3(1f, 1f, 1f);

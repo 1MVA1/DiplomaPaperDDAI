@@ -26,6 +26,7 @@ public class Saw : MonoBehaviour
         }
     }
 
+    [Header("Difficulty Settings")]
     public Difficulty difficulty = Difficulty.Easy;
 
     public SawDiff diffEasy = new SawDiff(2f, 0f, 0f);
@@ -34,6 +35,7 @@ public class Saw : MonoBehaviour
 
     private SawDiff currentDiff;
 
+    [Header("Saw logic")]
     public Waypoint[] waypoints;
     public float rotationSpeed = 360f;
 

@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     public float moveSpeed = 5f;
-
     public bool isGrounded = false;
 
     private bool canMove = true;

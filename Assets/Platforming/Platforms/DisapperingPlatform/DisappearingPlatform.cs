@@ -21,6 +21,7 @@ public class FallingPlatform : MonoBehaviour
         }
     }
 
+    [Header("Difficulty Settings")]
     public Difficulty difficulty = Difficulty.Easy;
 
     public PlatformDiff diffEasy = new PlatformDiff(2f, 2f);
@@ -29,6 +30,7 @@ public class FallingPlatform : MonoBehaviour
 
     private PlatformDiff currentDiff;
 
+    [Header("Platform logic")]
     public float apperingDuration = 0.25f;
 
     private bool isFading = false;

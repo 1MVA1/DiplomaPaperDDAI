@@ -11,12 +11,14 @@ public class MovingPlatform : MonoBehaviour
         public float stopTime = 1f;
     }
 
+    [Header("Difficulty Settings")]
     public Difficulty difficulty = Difficulty.Easy;
 
     public float speedEasy = 2f;
     public float speedMedium = 3f;
     public float speedHard = 4f;
 
+    [Header("Platform logic")]
     public Waypoint[] waypoints;
 
     private float speed;

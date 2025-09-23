@@ -486,11 +486,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7382392497282183201, guid: 406611b8e00bb114b81971e578cdf151, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.97
+      value: -1.12
       objectReference: {fileID: 0}
     - target: {fileID: 7382392497282183201, guid: 406611b8e00bb114b81971e578cdf151, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.66
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 7382392497282183201, guid: 406611b8e00bb114b81971e578cdf151, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1271,11 +1271,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2385243062467635205, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.46
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 2385243062467635205, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.28
+      value: -3.7
       objectReference: {fileID: 0}
     - target: {fileID: 2385243062467635205, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1310,7 +1310,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
+      propertyPath: rangeHard
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
       propertyPath: chaseSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
+      propertyPath: difficulty
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
@@ -1326,6 +1334,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
+      propertyPath: rangeMedium
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
       propertyPath: detectionRange
       value: 3
       objectReference: {fileID: 0}
@@ -1334,7 +1346,27 @@ PrefabInstance:
       value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
+      propertyPath: diffEasy.chaseSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
+      propertyPath: diffHard.chaseSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
       propertyPath: groundCheckDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
+      propertyPath: diffHard.patrolSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
+      propertyPath: diffMedium.chaseSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7850006917362260951, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
+      propertyPath: diffMedium.patrolSpeed
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8904392966349767758, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
