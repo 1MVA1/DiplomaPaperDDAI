@@ -4,6 +4,7 @@ public class Landmine : MonoBehaviour
 {
     public CircleCollider2D activationCollider;
     public CircleCollider2D explosionCollider;
+    private SpriteRenderer spriteRenderer;
 
     [System.Serializable]
     public class BombDiff
@@ -30,12 +31,14 @@ public class Landmine : MonoBehaviour
     private BombDiff currentDiff;
 
     [Header("Platform logic")]
-    public float disappearDelay = 0.5f;       
+    public float disappearDelay = 0.1f;
 
     private bool isActivated = false;
 
     private void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         switch (difficulty)
         {
             case Difficulty.Easy:
@@ -49,13 +52,11 @@ public class Landmine : MonoBehaviour
                 break;
         }
 
-        if (activationCollider != null) {
+        if (activationCollider != null)
             activationCollider.radius = currentDiff.activationRadius;
-        }
 
-        if (explosionCollider != null) {
+        if (explosionCollider != null)
             explosionCollider.radius = currentDiff.explosionRadius;
-        }
     }
 
     void Start() {
@@ -64,19 +65,16 @@ public class Landmine : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isActivated)
         {
-            if (!isActivated)
-            {
-                isActivated = true;
+            isActivated = true;
 
-                activationCollider.enabled = false;
-                gameObject.tag = "DeathTrigger";
+            activationCollider.enabled = false;
+            gameObject.tag = "DeathTrigger";
 
-                Debug.Log("Tick");
+            Debug.Log("Tick");
 
-                Invoke(nameof(Explode), currentDiff.explosionDelay);
-            }
+            Invoke(nameof(Explode), currentDiff.explosionDelay);
         }
     }
 
@@ -86,10 +84,25 @@ public class Landmine : MonoBehaviour
 
         explosionCollider.enabled = true;
 
-        Invoke(nameof(Disappear), disappearDelay);
+        Invoke(nameof(HideMine), disappearDelay);
     }
 
-    void Disappear() {
-        Destroy(gameObject);
+    void HideMine()
+    {
+        gameObject.tag = "Untagged";
+
+        spriteRenderer.enabled = false;
+
+        explosionCollider.enabled = false;
+    }
+
+    public void Refresh()
+    {
+        isActivated = false;
+
+        spriteRenderer.enabled = true;
+
+        activationCollider.enabled = true;
+        explosionCollider.enabled = false;
     }
 }

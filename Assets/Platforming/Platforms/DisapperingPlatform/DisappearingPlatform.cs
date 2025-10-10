@@ -1,12 +1,13 @@
 using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(SpriteRenderer), typeof(BoxCollider2D))]
 public class FallingPlatform : MonoBehaviour
 {
     private SpriteRenderer sr;
     private BoxCollider2D boxCol;
     private PlatformEffector2D effector;
+
+    private Coroutine coroutineFaR;
 
     [System.Serializable]
     public class PlatformDiff
@@ -59,10 +60,8 @@ public class FallingPlatform : MonoBehaviour
     {
         if (!isFading && collision.gameObject.CompareTag("Player"))
         {
-            // check the direction of impact (up)
-            if (collision.contacts[0].normal.y < -0.5f) {
-                StartCoroutine(FadeAndRespawn());
-            }
+            if (collision.contacts[0].normal.y < -0.5f)
+                coroutineFaR = StartCoroutine(FadeAndRespawn());
         }
     }
 
@@ -77,10 +76,13 @@ public class FallingPlatform : MonoBehaviour
         while (timer < currentDiff.disappearingDuration)
         {
             timer += Time.deltaTime;
-            sr.color = new Color(startColor.r, startColor.g, startColor.b, Mathf.Lerp(1f, 0f, timer / currentDiff.disappearingDuration));
+            sr.color = new Color(startColor.r, startColor.g, startColor.b,
+                Mathf.Lerp(1f, 0f, timer / currentDiff.disappearingDuration));
 
             yield return null;
         }
+
+        sr.enabled = false;
 
         boxCol.enabled = false;
         effector.enabled = false;
@@ -89,7 +91,6 @@ public class FallingPlatform : MonoBehaviour
         yield return new WaitForSeconds(currentDiff.respawnDelay);
 
         Collider2D[] hits;
-
         do
         {
             hits = Physics2D.OverlapBoxAll(boxCol.bounds.center, boxCol.bounds.size, 0f);
@@ -98,12 +99,15 @@ public class FallingPlatform : MonoBehaviour
         while (hits.Length > 0);
 
         // Step 3
-        timer = 0f;
+        sr.enabled = true;
 
-        while (timer < apperingDuration)
+        float appearTimer = 0f;
+
+        while (appearTimer < apperingDuration)
         {
-            timer += Time.deltaTime;
-            sr.color = new Color(startColor.r, startColor.g, startColor.b, Mathf.Lerp(0f, 1f, timer / apperingDuration));
+            appearTimer += Time.deltaTime;
+            sr.color = new Color(startColor.r, startColor.g, startColor.b,
+                Mathf.Lerp(0f, 1f, appearTimer / apperingDuration));
 
             yield return null;
         }
@@ -112,5 +116,23 @@ public class FallingPlatform : MonoBehaviour
         effector.enabled = true;
 
         isFading = false;
+        coroutineFaR = null;
+    }
+
+    public void Refresh()
+    {
+        if (coroutineFaR != null)
+        {
+            StopCoroutine(coroutineFaR);
+            coroutineFaR = null;
+        }
+
+        isFading = false;
+
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
+        sr.enabled = true;
+
+        boxCol.enabled = true;
+        effector.enabled = true;
     }
 }

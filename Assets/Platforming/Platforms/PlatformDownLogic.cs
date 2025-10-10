@@ -18,9 +18,8 @@ public class PlatformDownLogic : MonoBehaviour
         {
             TryToGetPlayerColider();
 
-            if (ctx.ReadValue<Vector2>().y < 0) {
+            if (ctx.ReadValue<Vector2>().y < 0)
                 Physics2D.IgnoreCollision(playerCollider, platformCollider, true);
-            }
         };
 
         inputActions.Player.Move.canceled += ctx =>
@@ -37,9 +36,8 @@ public class PlatformDownLogic : MonoBehaviour
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-            if (player != null) {
+            if (player != null) 
                 playerCollider = player.GetComponent<BoxCollider2D>();
-            }
         }
     }
 
@@ -49,9 +47,8 @@ public class PlatformDownLogic : MonoBehaviour
 
         do
         {
-            if (playerCollider == null) {
+            if (playerCollider == null)
                 yield break;
-            }
 
             hits = Physics2D.OverlapBoxAll(platformCollider.bounds.center, platformCollider.bounds.size, 0f);
 
@@ -73,9 +70,8 @@ public class PlatformDownLogic : MonoBehaviour
         }
         while (true);
 
-        if (playerCollider != null) {
+        if (playerCollider != null)
             Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
-        }
     }
 
     void OnEnable() => inputActions.Enable();

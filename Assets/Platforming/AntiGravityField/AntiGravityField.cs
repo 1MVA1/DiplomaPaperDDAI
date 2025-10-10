@@ -49,9 +49,8 @@ public class AntiGravityField : MonoBehaviour
         {
             Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
 
-            if (rb != null) {
+            if (rb != null)
                 rb.gravityScale = normalGravityScale;
-            }
         }
     }
 }

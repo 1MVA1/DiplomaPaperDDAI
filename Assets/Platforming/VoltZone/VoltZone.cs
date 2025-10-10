@@ -47,9 +47,9 @@ public class VoltZone : MonoBehaviour
     void Start()
     {
         zoneCollider = GetComponent<Collider2D>();
-        zoneCollider.enabled = false; 
+        zoneCollider.enabled = false;
 
-        Invoke(nameof(ActivateZone), currentDiff.interval); 
+        Invoke(nameof(ActivateZone), currentDiff.interval);
     }
 
     void ActivateZone()
@@ -57,13 +57,22 @@ public class VoltZone : MonoBehaviour
         zoneCollider.enabled = true;
         Debug.Log("On!");
 
-        Invoke(nameof(DeactivateZone), currentDiff.activeDuration); 
+        Invoke(nameof(DeactivateZone), currentDiff.activeDuration);
     }
 
     void DeactivateZone()
     {
         zoneCollider.enabled = false;
         Debug.Log("Off!");
+
+        Invoke(nameof(ActivateZone), currentDiff.interval);
+    }
+
+    public void Refresh()
+    {
+        CancelInvoke();
+
+        zoneCollider.enabled = false;
 
         Invoke(nameof(ActivateZone), currentDiff.interval);
     }

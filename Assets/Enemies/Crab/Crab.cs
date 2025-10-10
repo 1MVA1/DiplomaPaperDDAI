@@ -40,12 +40,15 @@ public class Crab : MonoBehaviour
 
     private Transform playerTransform;
 
-    [Header("Colider")]
+    [Header("Collider")]
     public int segments = 10;
 
     private float radius;
 
     private bool canSeePlayer = false;
+
+    private Vector3 startPosition;
+    private bool startMovingRight;
 
     private void Awake()
     {
@@ -53,26 +56,26 @@ public class Crab : MonoBehaviour
         {
             case Difficulty.Easy:
                 currentDiff = diffEasy;
-
                 break;
 
             case Difficulty.Medium:
                 currentDiff = diffMedium;
                 radius = rangeMedium;
-
                 break;
 
             case Difficulty.Hard:
                 currentDiff = diffHard;
                 radius = rangeHard;
-
                 break;
         }
     }
 
-    void Start() 
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        startPosition = transform.position;
+        startMovingRight = movingRight;
 
         if (difficulty != Difficulty.Easy)
         {
@@ -96,9 +99,8 @@ public class Crab : MonoBehaviour
         {
             PolygonCollider2D poly = GetComponent<PolygonCollider2D>();
 
-            if (poly != null) {
-                Destroy(poly); 
-            }
+            if (poly != null)
+                Destroy(poly);
         }
     }
 
@@ -126,10 +128,9 @@ public class Crab : MonoBehaviour
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-            if (player != null) 
+            if (player != null)
             {
                 playerTransform = player.transform;
-
                 return true;
             }
 
@@ -139,10 +140,9 @@ public class Crab : MonoBehaviour
         return true;
     }
 
-    private void Patrol() 
+    private void Patrol()
     {
         CheckNeedFlip();
-
         rb.linearVelocity = new Vector2((movingRight ? 1 : -1) * currentDiff.patrolSpeed, rb.linearVelocity.y);
     }
 
@@ -154,16 +154,14 @@ public class Crab : MonoBehaviour
             {
                 CheckNeedFlip();
 
-                if (playerTransform.position.x > transform.position.x && movingRight) 
+                if (playerTransform.position.x > transform.position.x && movingRight)
                 {
                     rb.linearVelocity = new Vector2(currentDiff.chaseSpeed, rb.linearVelocity.y);
-
                     return;
                 }
-                else if (playerTransform.position.x < transform.position.x && !movingRight) 
+                else if (playerTransform.position.x < transform.position.x && !movingRight)
                 {
                     rb.linearVelocity = new Vector2(-currentDiff.chaseSpeed, rb.linearVelocity.y);
-
                     return;
                 }
             }
@@ -176,17 +174,20 @@ public class Crab : MonoBehaviour
     {
         if (TryToGetPlayerTransform() && canSeePlayer)
         {
-            if (playerTransform.position.x > transform.position.x && !movingRight || 
-                playerTransform.position.x < transform.position.x && movingRight) {
+            if (playerTransform.position.x > transform.position.x && !movingRight ||
+                playerTransform.position.x < transform.position.x && movingRight)
+            {
                 Flip();
             }
 
             RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
 
-            if (groundInfo.collider != null) {
+            if (groundInfo.collider != null)
+            {
                 rb.linearVelocity = new Vector2((movingRight ? 1 : -1) * currentDiff.chaseSpeed, rb.linearVelocity.y);
             }
-            else {
+            else
+            {
                 rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             }
 
@@ -200,7 +201,8 @@ public class Crab : MonoBehaviour
     {
         RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
 
-        if (groundInfo.collider == false) {
+        if (groundInfo.collider == false)
+        {
             Flip();
         }
     }
@@ -217,15 +219,29 @@ public class Crab : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) {
+        if (other.CompareTag("Player"))
+        {
             canSeePlayer = true;
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) {
+        if (other.CompareTag("Player"))
+        {
             canSeePlayer = false;
         }
+    }
+
+    public void Refresh()
+    {
+        rb.linearVelocity = Vector2.zero;
+
+        transform.position = startPosition;
+
+        movingRight = startMovingRight;
+
+        canSeePlayer = false;
+        playerTransform = null;
     }
 }

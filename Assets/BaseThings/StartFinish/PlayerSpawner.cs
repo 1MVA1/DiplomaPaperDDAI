@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using System.Reflection;
+using System.Collections.Generic;
 
 public class PlayerSpawner : MonoBehaviour
 {
@@ -15,7 +17,12 @@ public class PlayerSpawner : MonoBehaviour
     private float timer = 0f;
     private bool isTimerRunning = false;
 
-    void Start() {
+    private List<MonoBehaviour> refreshObjects = new List<MonoBehaviour>();
+
+    void Start()
+    {
+        FindAllRefreshables();
+
         SpawnPlayer();
     }
 
@@ -28,13 +35,16 @@ public class PlayerSpawner : MonoBehaviour
         }
     }
 
-    public void SpawnPlayer() {
+    public void SpawnPlayer()
+    {
         StartCoroutine(RespawnRoutine());
     }
 
     private IEnumerator RespawnRoutine()
     {
         yield return new WaitForSeconds(respawnTime);
+
+        RefreshAllObjects();
 
         currentPlayer = Instantiate(playerPrefab, transform.position, Quaternion.identity);
 
@@ -44,7 +54,8 @@ public class PlayerSpawner : MonoBehaviour
 
     public void KillPlayer(GameObject player)
     {
-        if (player != null) {
+        if (player != null)
+        {
             Destroy(player);
         }
 
@@ -62,5 +73,39 @@ public class PlayerSpawner : MonoBehaviour
     public void FinishLevel()
     {
         isTimerRunning = false;
+    }
+
+    private void FindAllRefreshables()
+    {
+        refreshObjects.Clear();
+
+        MonoBehaviour[] allBehaviours = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None);
+
+        foreach (var behaviour in allBehaviours)
+        {
+            if (behaviour == null) 
+                continue;
+
+            MethodInfo refreshMethod = behaviour.GetType().GetMethod("Refresh", BindingFlags.Instance | BindingFlags.Public);
+
+            if (refreshMethod != null)
+                refreshObjects.Add(behaviour);
+        }
+
+        Debug.Log($"Найдено {refreshObjects.Count} объектов с методом Refresh()");
+    }
+
+    private void RefreshAllObjects()
+    {
+        foreach (var obj in refreshObjects)
+        {
+            if (obj == null) 
+                continue;
+
+            MethodInfo refreshMethod = obj.GetType().GetMethod("Refresh", BindingFlags.Instance | BindingFlags.Public);
+
+            if (refreshMethod != null)
+                refreshMethod.Invoke(obj, null);
+        }
     }
 }

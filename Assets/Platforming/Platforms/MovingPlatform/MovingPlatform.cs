@@ -1,13 +1,12 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.UIElements;
 
 public class MovingPlatform : MonoBehaviour
 {
     [System.Serializable]
     public class Waypoint
     {
-        public Vector3 point; 
+        public Vector3 point;
         public float stopTime = 1f;
     }
 
@@ -20,14 +19,19 @@ public class MovingPlatform : MonoBehaviour
 
     [Header("Platform logic")]
     public Waypoint[] waypoints;
+    public int startIndex = 0;
+    private bool baseIsGoingForward = true;
 
     private float speed;
-
-    private int currentIndex = 0; 
-    private bool isGoingForward = true; 
     private bool isWaiting = false;
 
+    private int currentIndex;
+    private bool isGoingForward;
+
     private Vector3 lastPosition;
+    private Vector3 startPosition;
+
+    private Coroutine coroutineWait;
 
     private void Awake()
     {
@@ -45,21 +49,25 @@ public class MovingPlatform : MonoBehaviour
         }
     }
 
-    void Start() {
+    void Start()
+    {
+        startPosition = transform.position;
         lastPosition = transform.position;
+
+        currentIndex = startIndex;
+        isGoingForward = baseIsGoingForward;
     }
 
     void Update()
     {
-        if (waypoints.Length == 0 || isWaiting) {
+        if (waypoints.Length == 0 || isWaiting)
             return;
-        }
 
         transform.position = Vector2.MoveTowards(transform.position, waypoints[currentIndex].point, speed * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, waypoints[currentIndex].point) < 0.05f)
         {
-            StartCoroutine(WaitAtPoint(waypoints[currentIndex].stopTime));
+            coroutineWait = StartCoroutine(WaitAtPoint(waypoints[currentIndex].stopTime));
 
             if (isGoingForward)
             {
@@ -99,16 +107,32 @@ public class MovingPlatform : MonoBehaviour
 
         foreach (Collider2D hit in hits)
         {
-            if (hit.CompareTag("Player")) 
+            if (hit.CompareTag("Player"))
             {
                 PlayerMovement player = hit.GetComponent<PlayerMovement>();
 
-                if (player != null && player.isGrounded) {
+                if (player != null && player.isGrounded)
                     hit.transform.position += transform.position - lastPosition;
-                }
             }
         }
 
         lastPosition = transform.position;
+    }
+
+    public void Refresh()
+    {
+        if (coroutineWait != null)
+        {
+            StopCoroutine(coroutineWait);
+            coroutineWait = null;
+        }
+
+        isWaiting = false;
+
+        transform.position = startPosition;
+        lastPosition = startPosition;
+
+        currentIndex = startIndex;
+        isGoingForward = baseIsGoingForward;
     }
 }

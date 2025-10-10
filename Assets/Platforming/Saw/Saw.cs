@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 
-
 public class Saw : MonoBehaviour
 {
     [System.Serializable]
@@ -39,11 +38,17 @@ public class Saw : MonoBehaviour
     public Waypoint[] waypoints;
     public float rotationSpeed = 360f;
 
+    public int startIndex = 0;
+    public bool baseIsGoingForward = true;
+
     private float currentSpeed;
 
-    private int currentIndex = 0;
-    private bool isGoingForward = true;
+    private int currentIndex;
+    private bool isGoingForward;
     private bool isWaiting = false;
+
+    private Vector3 startPosition;
+    private Coroutine coroutineWait;
 
     private void Awake()
     {
@@ -63,11 +68,18 @@ public class Saw : MonoBehaviour
         currentSpeed = currentDiff.speed;
     }
 
+    void Start()
+    {
+        startPosition = transform.position;
+
+        currentIndex = startIndex;
+        isGoingForward = baseIsGoingForward;
+    }
+
     void Update()
     {
-        if (waypoints.Length == 0 || isWaiting) {
+        if (waypoints.Length == 0 || isWaiting)
             return;
-        }
 
         currentSpeed = Mathf.MoveTowards(currentSpeed, currentDiff.speed, currentDiff.acceleration * Time.deltaTime);
 
@@ -76,7 +88,7 @@ public class Saw : MonoBehaviour
 
         if (Vector2.Distance(transform.position, waypoints[currentIndex].point) < 0.05f)
         {
-            StartCoroutine(WaitAtPoint(waypoints[currentIndex].stopTime));
+            coroutineWait = StartCoroutine(WaitAtPoint(waypoints[currentIndex].stopTime));
 
             if (isGoingForward)
             {
@@ -106,5 +118,24 @@ public class Saw : MonoBehaviour
         yield return new WaitForSeconds(duration);
 
         isWaiting = false;
+    }
+
+    public void Refresh()
+    {
+        if (coroutineWait != null)
+        {
+            StopCoroutine(coroutineWait);
+            coroutineWait = null;
+        }
+
+        isWaiting = false;
+
+        transform.position = startPosition;
+        transform.rotation = Quaternion.identity;
+
+        currentIndex = startIndex;
+        isGoingForward = baseIsGoingForward;
+
+        currentSpeed = currentDiff.speed;
     }
 }
