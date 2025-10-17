@@ -1,7 +1,6 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Crab : MonoBehaviour
+public class Crab : MonoBehaviour, IAdjustableDifficulty
 {
     private Rigidbody2D rb;
 
@@ -19,8 +18,6 @@ public class Crab : MonoBehaviour
     }
 
     [Header("Difficulty Settings")]
-    public Difficulty difficulty = Difficulty.Easy;
-
     public CrabDiff diffEasy = new CrabDiff(1.5f, 2f, 3f);
     public CrabDiff diffMedium = new CrabDiff(2.5f, 3.5f, 5f);
     public CrabDiff diffHard = new CrabDiff(3f, 5f, 7f);
@@ -29,6 +26,7 @@ public class Crab : MonoBehaviour
     public float rangeHard = 4f;
 
     private CrabDiff currentDiff;
+    private Difficulty diff;
 
     [Header("Movement")]
     public bool movingRight = false;
@@ -50,8 +48,10 @@ public class Crab : MonoBehaviour
     private Vector3 startPosition;
     private bool startMovingRight;
 
-    private void Awake()
+    public void ApplyDifficulty(Difficulty difficulty)
     {
+        diff = difficulty;
+
         switch (difficulty)
         {
             case Difficulty.Easy:
@@ -68,14 +68,6 @@ public class Crab : MonoBehaviour
                 radius = rangeHard;
                 break;
         }
-    }
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-
-        startPosition = transform.position;
-        startMovingRight = movingRight;
 
         if (difficulty != Difficulty.Easy)
         {
@@ -104,9 +96,17 @@ public class Crab : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+
+        startPosition = transform.position;
+        startMovingRight = movingRight;
+    }
+
     void Update()
     {
-        switch (difficulty)
+        switch (diff)
         {
             case Difficulty.Easy:
                 Patrol();

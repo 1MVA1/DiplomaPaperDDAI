@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class VoltZone : MonoBehaviour
+public class VoltZone : MonoBehaviour, IAdjustableDifficulty
 {
     private Collider2D zoneCollider;
 
@@ -20,15 +20,13 @@ public class VoltZone : MonoBehaviour
     }
 
     [Header("Difficulty Settings")]
-    public Difficulty difficulty = Difficulty.Easy;
-
     public VoltZoneDiff diffEasy = new VoltZoneDiff(3f, 1.25f, 1.5f);
     public VoltZoneDiff diffMedium = new VoltZoneDiff(2f, 1f, 2f);
     public VoltZoneDiff diffHard = new VoltZoneDiff(1.5f, 0.75f, 2.5f);
 
     private VoltZoneDiff currentDiff;
 
-    private void Awake()
+    public void ApplyDifficulty(Difficulty difficulty)
     {
         switch (difficulty)
         {

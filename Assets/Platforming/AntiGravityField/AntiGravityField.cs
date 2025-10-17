@@ -1,10 +1,8 @@
 using UnityEngine;
 
-public class AntiGravityField : MonoBehaviour
+public class AntiGravityField : MonoBehaviour, IAdjustableDifficulty
 {
     [Header("Difficulty Settings")]
-    public Difficulty difficulty = Difficulty.Easy;
-
     public float antiGravityScaleEasy = 0f;
     public float antiGravityScaleMedium = -0.25f;
     public float antiGravityScaleHard = -0.5f;
@@ -13,7 +11,7 @@ public class AntiGravityField : MonoBehaviour
 
     private float normalGravityScale;
 
-    private void Awake()
+    public void ApplyDifficulty(Difficulty difficulty)
     {
         switch (difficulty)
         {

@@ -1,15 +1,13 @@
 using UnityEngine;
 
-public class Spike : MonoBehaviour
+public class Spike : MonoBehaviour, IAdjustableDifficulty
 {
     [Header("Difficulty Settings")]
-    public Difficulty difficulty = Difficulty.Easy;
-
     public Vector3 scaleEasy = new Vector3(1f, 1f, 1f);
     public Vector3 scaleMedium = new Vector3(1.2f, 1.2f, 1f);
     public Vector3 scaleHard = new Vector3(1.4f, 1.4f, 1f);
 
-    private void Awake()
+    public void ApplyDifficulty(Difficulty difficulty)
     {
         Vector3 scale = Vector3.one;
 

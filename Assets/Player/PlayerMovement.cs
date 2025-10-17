@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
@@ -159,6 +158,16 @@ public class PlayerMovement : MonoBehaviour
                 isWallSliding = true;
             }
         }
+    }
+
+    public void DisableMovement()
+    {
+        canMove = false;
+        canDash = false;
+        isDashing = false;
+
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
     void OnCollisionExit2D(Collision2D collision)

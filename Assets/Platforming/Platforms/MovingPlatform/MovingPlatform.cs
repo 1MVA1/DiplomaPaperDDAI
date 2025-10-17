@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class MovingPlatform : MonoBehaviour
+public class MovingPlatform : MonoBehaviour, IAdjustableDifficulty
 {
     [System.Serializable]
     public class Waypoint
@@ -11,8 +11,6 @@ public class MovingPlatform : MonoBehaviour
     }
 
     [Header("Difficulty Settings")]
-    public Difficulty difficulty = Difficulty.Easy;
-
     public float speedEasy = 2f;
     public float speedMedium = 3f;
     public float speedHard = 4f;
@@ -33,7 +31,7 @@ public class MovingPlatform : MonoBehaviour
 
     private Coroutine coroutineWait;
 
-    private void Awake()
+    public void ApplyDifficulty(Difficulty difficulty)
     {
         switch (difficulty)
         {

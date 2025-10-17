@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class FallingPlatform : MonoBehaviour
+public class FallingPlatform : MonoBehaviour, IAdjustableDifficulty
 {
     private SpriteRenderer sr;
     private BoxCollider2D boxCol;
@@ -23,8 +23,6 @@ public class FallingPlatform : MonoBehaviour
     }
 
     [Header("Difficulty Settings")]
-    public Difficulty difficulty = Difficulty.Easy;
-
     public PlatformDiff diffEasy = new PlatformDiff(2f, 2f);
     public PlatformDiff diffMedium = new PlatformDiff(1.5f, 2.5f);
     public PlatformDiff diffHard = new PlatformDiff(1f, 3f);
@@ -36,12 +34,8 @@ public class FallingPlatform : MonoBehaviour
 
     private bool isFading = false;
 
-    void Awake()
+    public void ApplyDifficulty(Difficulty difficulty)
     {
-        sr = GetComponent<SpriteRenderer>();
-        boxCol = GetComponent<BoxCollider2D>();
-        effector = GetComponent<PlatformEffector2D>();
-
         switch (difficulty)
         {
             case Difficulty.Easy:
@@ -54,6 +48,12 @@ public class FallingPlatform : MonoBehaviour
                 currentDiff = diffHard;
                 break;
         }
+    }
+    void Awake()
+    {
+        sr = GetComponent<SpriteRenderer>();
+        boxCol = GetComponent<BoxCollider2D>();
+        effector = GetComponent<PlatformEffector2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

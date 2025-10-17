@@ -18,6 +18,18 @@ public class PlayerCollision : MonoBehaviour
         if (other.CompareTag("DeathTrigger"))
             spawner.KillPlayer(gameObject);
         else if (other.CompareTag("LevelFinish"))
+        {
+            var movement = GetComponent<PlayerMovement>();
+
+            if (movement != null)
+                movement.DisableMovement();
+
+            Collider2D col = GetComponent<Collider2D>();
+
+            if (col != null)
+                col.enabled = false;
+
             spawner.FinishLevel();
+        }
     }
 }

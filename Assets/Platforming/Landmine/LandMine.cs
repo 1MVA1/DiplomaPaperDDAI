@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class Landmine : MonoBehaviour
+public class Landmine : MonoBehaviour, IAdjustableDifficulty
 {
     public CircleCollider2D activationCollider;
     public CircleCollider2D explosionCollider;
+
     private SpriteRenderer spriteRenderer;
 
     [System.Serializable]
@@ -22,8 +23,6 @@ public class Landmine : MonoBehaviour
     }
 
     [Header("Difficulty Settings")]
-    public Difficulty difficulty = Difficulty.Easy;
-
     public BombDiff diffEasy = new BombDiff(3f, 4f, 2.25f);
     public BombDiff diffMedium = new BombDiff(3f, 5f, 1.75f);
     public BombDiff diffHard = new BombDiff(4f, 6f, 1.5f);
@@ -35,10 +34,8 @@ public class Landmine : MonoBehaviour
 
     private bool isActivated = false;
 
-    private void Awake()
+    public void ApplyDifficulty(Difficulty difficulty)
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
         switch (difficulty)
         {
             case Difficulty.Easy:
@@ -57,6 +54,10 @@ public class Landmine : MonoBehaviour
 
         if (explosionCollider != null)
             explosionCollider.radius = currentDiff.explosionRadius;
+    }
+
+    private void Awake() {
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Start() {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Saw : MonoBehaviour
+public class Saw : MonoBehaviour, IAdjustableDifficulty
 {
     [System.Serializable]
     public class Waypoint
@@ -26,8 +26,6 @@ public class Saw : MonoBehaviour
     }
 
     [Header("Difficulty Settings")]
-    public Difficulty difficulty = Difficulty.Easy;
-
     public SawDiff diffEasy = new SawDiff(2f, 0f, 0f);
     public SawDiff diffMedium = new SawDiff(3f, 0f, 0f);
     public SawDiff diffHard = new SawDiff(4f, 0.5f, 6f);
@@ -50,7 +48,7 @@ public class Saw : MonoBehaviour
     private Vector3 startPosition;
     private Coroutine coroutineWait;
 
-    private void Awake()
+    public void ApplyDifficulty(Difficulty difficulty)
     {
         switch (difficulty)
         {

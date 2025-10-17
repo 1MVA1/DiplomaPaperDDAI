@@ -3,27 +3,31 @@ using TMPro;
 using System.Collections;
 using System.Reflection;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerSpawner : MonoBehaviour
 {
-    [Header("Player Settings")]
+    [Header("Spawn Settings")]
     public GameObject playerPrefab;
-    public float respawnTime = 3f;
+
+    public float respawnTime = 2f;
+    public float levelDelay = 2f;
 
     [Header("UI")]
     public TMP_Text timerText;
 
     private GameObject currentPlayer;
+
     private float timer = 0f;
     private bool isTimerRunning = false;
 
     private List<MonoBehaviour> refreshObjects = new List<MonoBehaviour>();
 
-    void Start()
+    void Awake()
     {
-        FindAllRefreshables();
-
-        SpawnPlayer();
+        if (LevelManager.Instance != null)
+            LevelManager.Instance.OnLevelReady += OnLevelReady;
     }
 
     void Update()
@@ -35,21 +39,26 @@ public class PlayerSpawner : MonoBehaviour
         }
     }
 
-    public void SpawnPlayer()
+    private void OnLevelReady()
     {
-        StartCoroutine(RespawnRoutine());
-    }
+        refreshObjects.Clear();
 
-    private IEnumerator RespawnRoutine()
-    {
-        yield return new WaitForSeconds(respawnTime);
+        MonoBehaviour[] allBehaviours = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None);
 
-        RefreshAllObjects();
+        foreach (var behaviour in allBehaviours)
+        {
+            if (behaviour == null)
+                continue;
 
-        currentPlayer = Instantiate(playerPrefab, transform.position, Quaternion.identity);
+            MethodInfo refreshMethod = behaviour.GetType().GetMethod("Refresh", BindingFlags.Instance | BindingFlags.Public);
 
-        timer = 0f;
-        isTimerRunning = true;
+            if (refreshMethod != null)
+                refreshObjects.Add(behaviour);
+        }
+
+        Debug.Log($"Found {refreshObjects.Count} objs with Refresh()");
+
+        StartCoroutine(Respawn(true));
     }
 
     public void KillPlayer(GameObject player)
@@ -61,51 +70,44 @@ public class PlayerSpawner : MonoBehaviour
 
         isTimerRunning = false;
 
-        StartCoroutine(RespawnAfterDelay());
+        StartCoroutine(Respawn(false));
     }
 
-    private IEnumerator RespawnAfterDelay()
+    private IEnumerator Respawn(bool isFirst)
     {
         yield return new WaitForSeconds(respawnTime);
-        SpawnPlayer();
+
+        if (!isFirst)
+        {
+            foreach (var obj in refreshObjects)
+            {
+                if (obj == null)
+                    continue;
+
+                var refreshMethod = obj.GetType().GetMethod("Refresh", BindingFlags.Instance | BindingFlags.Public);
+
+                if (refreshMethod != null)
+                    refreshMethod.Invoke(obj, null);
+            }
+        }
+
+        currentPlayer = Instantiate(playerPrefab, transform.position, Quaternion.identity);
+
+        timer = 0f;
+        isTimerRunning = true;
     }
 
     public void FinishLevel()
     {
         isTimerRunning = false;
+
+        StartCoroutine(LoadNextLevel());
     }
 
-    private void FindAllRefreshables()
+    private IEnumerator LoadNextLevel()
     {
-        refreshObjects.Clear();
+        yield return new WaitForSeconds(levelDelay);
 
-        MonoBehaviour[] allBehaviours = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None);
-
-        foreach (var behaviour in allBehaviours)
-        {
-            if (behaviour == null) 
-                continue;
-
-            MethodInfo refreshMethod = behaviour.GetType().GetMethod("Refresh", BindingFlags.Instance | BindingFlags.Public);
-
-            if (refreshMethod != null)
-                refreshObjects.Add(behaviour);
-        }
-
-        Debug.Log($"Найдено {refreshObjects.Count} объектов с методом Refresh()");
-    }
-
-    private void RefreshAllObjects()
-    {
-        foreach (var obj in refreshObjects)
-        {
-            if (obj == null) 
-                continue;
-
-            MethodInfo refreshMethod = obj.GetType().GetMethod("Refresh", BindingFlags.Instance | BindingFlags.Public);
-
-            if (refreshMethod != null)
-                refreshMethod.Invoke(obj, null);
-        }
+        LevelManager.Instance.LoadNextLevel();
     }
 }
