@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour
     [Header("Database of all levels")]
     public LevelDatabase levelDatabase;
 
-    public int levelIndex = 0;
+    public int levelIndex;
 
     [Header("Current difficulty")]
     [Range(1, 5)] public int enemyDifficulty;
@@ -30,13 +30,16 @@ public class LevelManager : MonoBehaviour
         }
 
         Instance = this;
-
         DontDestroyOnLoad(gameObject);
 
+        //Only for debug
+        PlayerPrefs.DeleteAll();
+
         //Load save
-        enemyDifficulty = PlayerPrefs.GetInt("EnemyDifficulty", 3);
-        platformingDifficulty = PlayerPrefs.GetInt("PlatformingDifficulty", 3);
-        levelIndex = PlayerPrefs.GetInt("CurrentLevelIndex", 0);
+        levelIndex = PlayerPrefs.GetInt("levelIndex", -1);
+        enemyDifficulty = PlayerPrefs.GetInt("enemyDifficulty", 3);
+        platformingDifficulty = PlayerPrefs.GetInt("platformingDifficulty", 3);
+        LocalizationManager.language = (Language)PlayerPrefs.GetInt("language", (int)Language.En);
     }
 
     public void LoadLevel(int levelIndex)
@@ -106,9 +109,10 @@ public class LevelManager : MonoBehaviour
 
     public void SaveGame()
     {
-        PlayerPrefs.SetInt("EnemyDifficulty", enemyDifficulty);
-        PlayerPrefs.SetInt("PlatformingDifficulty", platformingDifficulty);
-        PlayerPrefs.SetInt("CurrentLevelIndex", levelIndex);
+        PlayerPrefs.SetInt("levelIndex", levelIndex);
+        PlayerPrefs.SetInt("enemyDifficulty", enemyDifficulty);
+        PlayerPrefs.SetInt("platformingDifficulty", platformingDifficulty);
+        PlayerPrefs.SetInt("language", (int)LocalizationManager.language);
 
         PlayerPrefs.Save();
     }
