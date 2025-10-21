@@ -23,6 +23,6 @@ public class LocalizationManager : ScriptableObject
         }
 
         Debug.LogWarning($"Key '{key}' not found in table.");
-        return "";
+        return "@error";
     }
 }

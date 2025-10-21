@@ -1121,30 +1121,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 395741797171ab04ab19f10146439eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
-  settings:
-  - {fileID: 4139294006043091167}
-  - {fileID: 1046097814044582549}
-  - {fileID: 5436911293081142054}
-  - {fileID: 2915182862587369961}
-  confirm:
-  - {fileID: 1204438192608646330}
-  - {fileID: 6274989313824431557}
-  - {fileID: 2915182862587369961}
+  settings_bns:
+  - {fileID: 5987435579312241024}
+  - {fileID: 5759587729215778775}
+  - {fileID: 4518940041204504614}
+  confirm_bns:
+  - {fileID: 8825741005956703136}
+  - {fileID: 4518940041204504614}
+  settings_txts:
+  - {fileID: 8052595471838748705}
+  confirm_txts:
+  - {fileID: 739577166998547968}
+  settings_bn_txts: []
+  confirm_bn_txts:
+  - {fileID: 7469786152240434414}
+  - {fileID: 7328229972694798774}
   generalTable: {fileID: 11400000, guid: d555680c2be70af4e824c16776b02bbc, type: 2}
-  txts:
+  pauseTable: {fileID: 11400000, guid: 375003cde7002ae47a733be55bd98f5e, type: 2}
+  pause_bns:
+  - {fileID: 9110778077000349549}
+  - {fileID: 41225871082215065}
+  - {fileID: 5547724565484714971}
+  - {fileID: 1183147889694175892}
+  pause_txts: []
+  pause_bn_txts:
   - {fileID: 3889349927740963024}
   - {fileID: 6451816184576745436}
   - {fileID: 973886666746156966}
   - {fileID: 6978169199732084050}
-  - {fileID: 7469786152240434414}
-  - {fileID: 7328229972694798774}
-  - {fileID: 8052595471838748705}
-  pauseTable: {fileID: 11400000, guid: 375003cde7002ae47a733be55bd98f5e, type: 2}
-  pause:
-  - {fileID: 4187854696369111810}
-  - {fileID: 9199765258963020948}
-  - {fileID: 2960300234708189227}
-  - {fileID: 197513775654274496}
   isInGame: 0
 --- !u!1 &4139294006043091167
 GameObject:
@@ -1582,12 +1586,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8910819795189343646}
   - {fileID: 922901655556660667}
   - {fileID: 5548713584565119635}
   - {fileID: 7881564074921901131}
   - {fileID: 3534310289751951253}
   - {fileID: 1623961529898550520}
-  - {fileID: 8910819795189343646}
   - {fileID: 5564567476121564970}
   - {fileID: 8383809236781006669}
   m_Father: {fileID: 6654582628547676635}

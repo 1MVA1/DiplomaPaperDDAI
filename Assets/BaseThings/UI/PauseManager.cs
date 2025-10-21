@@ -20,13 +20,19 @@ public class PauseManager: UIManagerBase
     [Header("Localization")]
     public LocalizationTable pauseTable;
 
-    [Header("Panels")]
-    public GameObject[] pause;
+    [Header("Buttons")]
+    public Button[] pause_bns;
 
-    private PauseStates state = PauseStates.Null;
+    [Header("Texts")]
+    public TMP_Text[] pause_txts;
+
+    [Header("Button texts")]
+    public TMP_Text[] pause_bn_txts;
 
     [Header("Debug")]
     public bool isInGame = false;
+
+    private PauseStates state = PauseStates.Null;
 
     private void Awake()
     {
@@ -46,7 +52,7 @@ public class PauseManager: UIManagerBase
         TurnOffPanel();
 
         state = PauseStates.Pause;
-        SetActivePanel(pause, true);
+        SetActivePanel(pause_bns, pause_txts, true);
     }
 
     public void TurnOnSettings()
@@ -54,7 +60,7 @@ public class PauseManager: UIManagerBase
         TurnOffPanel();
 
         state = PauseStates.Settings;
-        SetActivePanel(settings, true);
+        SetActivePanel(settings_bns, settings_txts, true);
     }
 
     public void TurnOnBackToMenuConfirm()
@@ -62,22 +68,14 @@ public class PauseManager: UIManagerBase
         TurnOffPanel();
 
         //
-        var bn = confirm[1].GetComponent<Button>();
+        confirm_bns[0].onClick.RemoveAllListeners();
+        confirm_bns[0].onClick.AddListener(BackToMenu);
 
-        if (bn != null)
-        {
-            bn.onClick.RemoveAllListeners();
-            bn.onClick.AddListener(BackToMenu);
-        }
-
-        var txt = confirm[0].GetComponent<TMP_Text>();
-
-        if (txt != null)
-            txt.text = LocalizationManager.GetText(pauseTable, "back_text");
+        confirm_txts[0].text = LocalizationManager.GetText(pauseTable, "back_text");
         //
 
         state = PauseStates.Confirm;
-        SetActivePanel(confirm, true);
+        SetActivePanel(confirm_bns, confirm_txts, true);
     }
 
     public void TurnOnExitConfirm()
@@ -85,22 +83,14 @@ public class PauseManager: UIManagerBase
         TurnOffPanel();
 
         //
-        var bn = confirm[1].GetComponent<Button>();
+        confirm_bns[0].onClick.RemoveAllListeners();
+        confirm_bns[0].onClick.AddListener(ExitGame);
 
-        if (bn != null)
-        {
-            bn.onClick.RemoveAllListeners();
-            bn.onClick.AddListener(ExitGame);
-        }
-
-        var txt = confirm[0].GetComponent<TMP_Text>();
-
-        if (txt != null)
-            txt.text = LocalizationManager.GetText(generalTable, "exit_text");
+        confirm_txts[0].text = LocalizationManager.GetText(generalTable, "exit_text");
         //
 
         state = PauseStates.Confirm;
-        SetActivePanel(confirm, true);
+        SetActivePanel(confirm_bns, confirm_txts, true);
     }
 
     public void TurnOffPanel()
@@ -108,15 +98,15 @@ public class PauseManager: UIManagerBase
         switch (state)
         {
             case PauseStates.Pause:
-                SetActivePanel(pause, false);
+                SetActivePanel(pause_bns, pause_txts, false);
                 break;
 
             case PauseStates.Settings:
-                SetActivePanel(settings, false);
+                SetActivePanel(settings_bns, settings_txts, false);
                 break;
 
             case PauseStates.Confirm:
-                SetActivePanel(confirm, false);
+                SetActivePanel(confirm_bns, confirm_txts, false);
                 break;
         }
     }
@@ -124,18 +114,17 @@ public class PauseManager: UIManagerBase
     //Localization
     public override void ChangeLanguage(Language newLanguage)
     {
+        base.ChangeLanguage(newLanguage);
+
         //Main
-        txts[0].text = LocalizationManager.GetText(generalTable, "continue");
-        txts[1].text = LocalizationManager.GetText(generalTable, "settings");
-        txts[2].text = LocalizationManager.GetText(pauseTable, "back_menu");
-        txts[3].text = LocalizationManager.GetText(generalTable, "exit");
+        pause_bn_txts[0].text = LocalizationManager.GetText(generalTable, "continue");
+        pause_bn_txts[1].text = LocalizationManager.GetText(generalTable, "settings");
+        pause_bn_txts[2].text = LocalizationManager.GetText(pauseTable, "back_menu");
+        pause_bn_txts[3].text = LocalizationManager.GetText(generalTable, "exit");
 
         //Confirm
-        txts[4].text = LocalizationManager.GetText(generalTable, "confirm");
-        txts[5].text = LocalizationManager.GetText(generalTable, "back");
-
-        //Settings
-        txts[6].text = LocalizationManager.GetText(generalTable, "language_text");
+        confirm_bn_txts[0].text = LocalizationManager.GetText(generalTable, "confirm");
+        confirm_bn_txts[1].text = LocalizationManager.GetText(generalTable, "back");
     }
 
     //Special
@@ -152,6 +141,8 @@ public class PauseManager: UIManagerBase
     {
         SceneManager.LoadScene("Menu");
 
+        Time.timeScale = 1f;
+
         Destroy(gameObject);
     }
 
@@ -159,7 +150,7 @@ public class PauseManager: UIManagerBase
     {
         if (state == PauseStates.Null && isInGame)
         {
-            Time.timeScale = 1f;
+            Time.timeScale = 0f;
 
             TurnOnPause();
         }

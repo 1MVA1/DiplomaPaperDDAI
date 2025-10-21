@@ -7,14 +7,20 @@ public class UIManagerBase : MonoBehaviour
 {
     protected PlayerInputActions inputActions;
 
-    [Header("Base panels")]
-    public GameObject[] settings;
-    public GameObject[] confirm;
+    [Header("Base buttons")]
+    public Button[] settings_bns;
+    public Button[] confirm_bns;
+
+    [Header("Base texts")]
+    public TMP_Text[] settings_txts;
+    public TMP_Text[] confirm_txts;
+
+    [Header("Base button texts")]
+    public TMP_Text[] settings_bn_txts;
+    public TMP_Text[] confirm_bn_txts;
 
     [Header("Base localization")]
     public LocalizationTable generalTable;
-
-    public TMP_Text[] txts;
 
     //General
     protected virtual void Start()
@@ -22,40 +28,37 @@ public class UIManagerBase : MonoBehaviour
         switch (LocalizationManager.language)
         {
             case Language.En:
-                ChangeButton(settings, 1, false);
+                settings_bns[0].interactable = false;
                 break;
 
             case Language.Ru:
-                ChangeButton(settings, 2, false);
+                settings_bns[1].interactable = false;
                 break;
         }
 
         ChangeLanguage(LocalizationManager.language);
     }
 
-    protected void ChangeButton(GameObject[] gobjs, int index, bool newState)
+    protected void SetActivePanel(Button[] bns, TMP_Text[] txts, bool newActive)
     {
-        var bn = gobjs[index].GetComponent<Button>();
+        foreach (var bn in bns)
+            bn.gameObject.SetActive(newActive);
 
-        if (bn != null)
-            bn.interactable = newState;
-    }
-
-    protected void SetActivePanel(GameObject[] objs, bool newActive)
-    {
-        foreach (var obj in objs)
-        {
-            obj.SetActive(newActive);
-        }
+        foreach (var txt in txts)
+            txt.gameObject.SetActive(newActive);
     }
 
     //Localization
-    public virtual void ChangeLanguage(Language newLanguage) { }
+    public virtual void ChangeLanguage(Language newLanguage) 
+    {
+        //Settings
+        settings_txts[0].text = LocalizationManager.GetText(generalTable, "language_text");
+    }
 
     public void OnEnglishPressed()
     {
-        ChangeButton(settings, 1, false);
-        ChangeButton(settings, 2, true);
+        settings_bns[0].interactable = false;
+        settings_bns[1].interactable = true;
 
         LocalizationManager.language = Language.En;
 
@@ -64,8 +67,8 @@ public class UIManagerBase : MonoBehaviour
 
     public void OnRussianPressed()
     {
-        ChangeButton(settings, 1, true);
-        ChangeButton(settings, 2, false);
+        settings_bns[0].interactable = true;
+        settings_bns[1].interactable = false;
 
         LocalizationManager.language = Language.Ru;
 

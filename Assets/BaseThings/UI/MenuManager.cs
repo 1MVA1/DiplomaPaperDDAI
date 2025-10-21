@@ -19,9 +19,16 @@ public class MenuManager: UIManagerBase
     [Header("Localization")]
     public LocalizationTable menuTable;
 
-    [Header("Panels")]
-    public GameObject[] main;
-    public GameObject[] newgame;
+    [Header("Buttons")]
+    public Button[] main_bns;
+    public Button[] newgame_bns;
+
+    [Header("Texts")]
+    public TMP_Text[] main_txts;
+    public TMP_Text[] newgame_txts;
+
+    [Header("Button texts")]
+    public TMP_Text[] main_bn_txts;
 
     private MenuStates state = MenuStates.Main;
 
@@ -33,19 +40,14 @@ public class MenuManager: UIManagerBase
         base.Start();
 
         if (LevelManager.Instance.levelIndex == -1)
-            ChangeButton(main, 1, false);
+            main_bns[1].interactable = false;
         else
         {
-            var bn = main[0].GetComponent<Button>();
-
-            if (bn != null)
-            {
-                bn.onClick.RemoveAllListeners();
-                bn.onClick.AddListener(TurnOnNewGameConfirm);
-            }
+            main_bns[0].onClick.RemoveAllListeners();
+            main_bns[0].onClick.AddListener(TurnOnNewGameConfirm);
         }
 
-        SetActivePanel(main, true);
+        SetActivePanel(main_bns, main_txts, true);
     }
 
     //TurnOns
@@ -54,7 +56,7 @@ public class MenuManager: UIManagerBase
         TurnOffPanel();
 
         state = MenuStates.Main;
-        SetActivePanel(main, true);
+        SetActivePanel(main_bns, main_txts, true);
     }
 
     public void TurnOnNewGame()
@@ -64,21 +66,24 @@ public class MenuManager: UIManagerBase
         enemyDifficulty = 3;
         platformDifficulty = 3;
 
-        //
-        var bn = newgame[13].GetComponent<Button>();
-
-        bn.onClick.RemoveAllListeners();
-        bn.onClick.AddListener(StartGame);
-
-        var text = newgame[0].GetComponent<TMP_Text>();
-
-        if (text != null) {
-            text.text = LocalizationManager.GetText(menuTable, "newgame_text");
+        for (int i = 0; i <= 9; i++)
+        {
+            if (i == 2 || i == 7)
+                newgame_bns[i].interactable = false;
+            else
+                newgame_bns[i].interactable = true;
         }
+
+        //
+        newgame_bns[10].onClick.RemoveAllListeners();
+        newgame_bns[10].onClick.AddListener(StartGame);
+
+        newgame_txts[0].text = LocalizationManager.GetText(menuTable, "newgame_text");
+ 
         //
 
         state = MenuStates.NewGame;
-        SetActivePanel(newgame, true);
+        SetActivePanel(newgame_bns, newgame_txts, true);
     }
 
     public void TurnOnSettings()
@@ -86,7 +91,7 @@ public class MenuManager: UIManagerBase
         TurnOffPanel();
 
         state = MenuStates.Settings;
-        SetActivePanel(settings, true);
+        SetActivePanel(settings_bns, settings_txts, true);
     }
 
     public void TurnOnExitConfirm()
@@ -94,22 +99,14 @@ public class MenuManager: UIManagerBase
         TurnOffPanel();
 
         //
-        var bn = confirm[1].GetComponent<Button>();
+        confirm_bns[0].onClick.RemoveAllListeners();
+        confirm_bns[0].onClick.AddListener(ExitGame);
 
-        if (bn != null)
-        {
-            bn.onClick.RemoveAllListeners();
-            bn.onClick.AddListener(ExitGame);
-        }
-
-        var txt = confirm[0].GetComponent<TMP_Text>();
-
-        if (txt != null)
-            txt.text = LocalizationManager.GetText(generalTable, "exit_text");
+        confirm_txts[0].text = LocalizationManager.GetText(generalTable, "exit_text");
         //
 
         state = MenuStates.Confirm;
-        SetActivePanel(confirm, true);
+        SetActivePanel(confirm_bns, confirm_txts, true);
     }
 
     public void TurnOnNewGameConfirm()
@@ -117,22 +114,14 @@ public class MenuManager: UIManagerBase
         TurnOffPanel();
 
         //
-        var bn = confirm[1].GetComponent<Button>();
+        confirm_bns[0].onClick.RemoveAllListeners();
+        confirm_bns[0].onClick.AddListener(TurnOnNewGame);
 
-        if (bn != null)
-        {
-            bn.onClick.RemoveAllListeners();
-            bn.onClick.AddListener(TurnOnNewGame);
-        }
-
-        var txt = confirm[0].GetComponent<TMP_Text>();
-
-        if (txt != null)
-            txt.text = LocalizationManager.GetText(menuTable, "ngconfirm_text");
+        confirm_txts[0].text = LocalizationManager.GetText(menuTable, "ngconfirm_text");
         //
 
         state = MenuStates.Confirm;
-        SetActivePanel(confirm, true);
+        SetActivePanel(confirm_bns, confirm_txts, true);
     }
 
     public void TurnOffPanel()
@@ -140,19 +129,19 @@ public class MenuManager: UIManagerBase
         switch (state)
         {
             case MenuStates.Main:
-                SetActivePanel(main, false);
+                SetActivePanel(main_bns, main_txts, false);
                 break;
 
             case MenuStates.NewGame:
-                SetActivePanel(newgame, false);
+                SetActivePanel(newgame_bns, newgame_txts, false);
                 break;
 
             case MenuStates.Settings:
-                SetActivePanel(settings, false);
+                SetActivePanel(settings_bns, settings_txts, false);
                 break;
 
             case MenuStates.Confirm:
-                SetActivePanel(confirm, false);
+                SetActivePanel(confirm_bns, confirm_txts, false);
                 break;
         }
     }
@@ -160,41 +149,40 @@ public class MenuManager: UIManagerBase
     //New game buttons
     public void SelectEnemyDifficulty(int difficulty)
     {
-        ChangeButton(newgame, 1 + enemyDifficulty, true);
+        newgame_bns[enemyDifficulty - 1].interactable = true;
 
         enemyDifficulty = difficulty;
 
-        ChangeButton(newgame, 1 + enemyDifficulty, false);
+        newgame_bns[enemyDifficulty - 1].interactable = false;
     }
 
     public void SelectPlatformDifficulty(int difficulty)
     {
-        ChangeButton(newgame, 7 + platformDifficulty, true);
+        newgame_bns[platformDifficulty + 4].interactable = true;
 
         platformDifficulty = difficulty;
 
-        ChangeButton(newgame, 7 + platformDifficulty, false);
+        newgame_bns[platformDifficulty + 4].interactable = false;
     }
 
     //Localization
     public override void ChangeLanguage(Language newLanguage)
     {
+        base.ChangeLanguage(newLanguage);
+
         //Main
-        txts[0].text = LocalizationManager.GetText(menuTable, "newgame");
-        txts[1].text = LocalizationManager.GetText(generalTable, "continue");
-        txts[2].text = LocalizationManager.GetText(generalTable, "settings");
-        txts[3].text = LocalizationManager.GetText(generalTable, "exit");
+        main_bn_txts[0].text = LocalizationManager.GetText(menuTable, "newgame");
+        main_bn_txts[1].text = LocalizationManager.GetText(generalTable, "continue");
+        main_bn_txts[2].text = LocalizationManager.GetText(generalTable, "settings");
+        main_bn_txts[3].text = LocalizationManager.GetText(generalTable, "exit");
 
         //Confirm
-        txts[4].text = LocalizationManager.GetText(generalTable, "confirm");
-        txts[5].text = LocalizationManager.GetText(generalTable, "back");
+        confirm_bn_txts[0].text = LocalizationManager.GetText(generalTable, "confirm");
+        confirm_bn_txts[1].text = LocalizationManager.GetText(generalTable, "back");
 
         //Newgame
-        txts[6].text = LocalizationManager.GetText(menuTable, "enemy_text");
-        txts[7].text = LocalizationManager.GetText(menuTable, "platforming_text");
-
-        //Settings
-        txts[8].text = LocalizationManager.GetText(generalTable, "language_text");
+        newgame_txts[1].text = LocalizationManager.GetText(menuTable, "enemy_text");
+        newgame_txts[2].text = LocalizationManager.GetText(menuTable, "platforming_text");
     }
 
     //Special 
