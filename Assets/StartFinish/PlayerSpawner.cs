@@ -24,10 +24,8 @@ public class PlayerSpawner : MonoBehaviour
 
     private List<MonoBehaviour> refreshObjects = new List<MonoBehaviour>();
 
-    void Awake()
-    {
-        if (LevelManager.Instance != null)
-            LevelManager.Instance.OnLevelReady += OnLevelReady;
+    void Awake() {
+        LevelManager.Instance.OnLevelReady += OnLevelReady;
     }
 
     void Update()

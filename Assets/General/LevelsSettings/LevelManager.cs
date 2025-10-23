@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,16 +11,12 @@ public class LevelManager : MonoBehaviour
     public event LevelReadyHandler OnLevelReady;
 
     [Header("Database")]
-    public LevelDatabase levelDatabase;
+    public LevelDataBase levelDataBase;
 
-    [Header("Level info")]
-    public int levelIndex;
+    private GameObjectConfig enemyConfig;
+    private GameObjectConfig platformingConfig;
 
-    public int enemyDifficulty;
-    public int platformingDifficulty;
-
-    private LevelConfig enemyConfig;
-    private LevelConfig platformingConfig;
+    public bool wasInMenu = false;
 
     //General and saves
     void Awake()
@@ -37,33 +34,34 @@ public class LevelManager : MonoBehaviour
     //Manage levels
     public void LoadLevel(int levelIndex)
     {
-        if (levelDatabase == null)
+        wasInMenu = true;
+
+        if (levelDataBase == null)
         {
             Debug.LogError("Database missing!");
             return;
         }
 
-        if (levelIndex >= levelDatabase.levels.Count)
+        if (levelIndex <= -1 || levelIndex >= levelDataBase.levels.Count)
         {
             Debug.LogError("Invalid level index!");
             return;
         }
 
-        var level = levelDatabase.levels[levelIndex];
+        var level = levelDataBase.levels[levelIndex];
 
-        if (level.enemyConfigs == null)
-            Debug.LogWarning("Enemy config not found!");
-        else if (level.enemyConfigs.Count != 5)
-             Debug.LogWarning("Enemy configsData has not enough members!");
-        else
-            enemyConfig = level.enemyConfigs[enemyDifficulty];
+        if (level.config == null)
+            Debug.LogWarning("Ñonfig not found!");
 
-        if (level.platformingConfigs == null)
-            Debug.LogWarning("Platforming config not found!");
-        else if (level.platformingConfigs.Count != 5)
-            Debug.LogWarning("Platforming configsData has not enough members!");
+        if (level.config.enemyConfig.Count != 5)
+            Debug.LogWarning("EnemyConfigs has not enough members!");
         else
-            platformingConfig = level.platformingConfigs[platformingDifficulty];
+            enemyConfig = level.config.enemyConfig[SaveManager.Instance.enemyDifficulty];
+
+        if (level.config.platformingConfig.Count != 5)
+            Debug.LogWarning("PlatformingConfigs has not enough members!");
+        else
+            platformingConfig = level.config.platformingConfig[SaveManager.Instance.platformingDifficulty];
 
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(level.sceneName);
@@ -82,7 +80,7 @@ public class LevelManager : MonoBehaviour
         OnLevelReady?.Invoke();
     }
 
-    void SpawnObjects(LevelConfig config)
+    void SpawnObjects(GameObjectConfig config)
     {
         foreach (var data in config.data)
         {
@@ -95,8 +93,8 @@ public class LevelManager : MonoBehaviour
 
     public void LoadNextLevel() 
     {
-        levelIndex++;
+        SaveManager.Instance.levelIndex++;
 
-        LoadLevel(levelIndex);
+        LoadLevel(SaveManager.Instance.levelIndex);
     }
 }

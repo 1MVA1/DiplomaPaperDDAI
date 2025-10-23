@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56f17cf698fe8140a72022e36a892af, type: 3}
+  m_Name: LevelDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::LevelDataBase
+  levels:
+  - sceneAsset: {fileID: 102900000, guid: 2eff76a339705084d8017ff811d27c7b, type: 3}
+    sceneName: L1
+    config: {fileID: 11400000, guid: f24c60dc682a25f42bbf87858548288d, type: 2}
+  - sceneAsset: {fileID: 102900000, guid: 40c723d916d43d142a693661de19444c, type: 3}
+    sceneName: L2
+    config: {fileID: 11400000, guid: 287a2b02f7de1214fb4ee3107c6620c3, type: 2}
+  - sceneAsset: {fileID: 102900000, guid: ee9ab6a4732791a4cb657b618889e133, type: 3}
+    sceneName: L3
+    config: {fileID: 11400000, guid: 957d3af67aa8bd449a0bbc70c58e0e38, type: 2}
+  - sceneAsset: {fileID: 102900000, guid: 89f4f0fb6a272814cb710a89ac07bd7a, type: 3}
+    sceneName: L4
+    config: {fileID: 11400000, guid: bc270bc6bad56434e89398f5b86ecfad, type: 2}
+  - sceneAsset: {fileID: 102900000, guid: 2c898e35b1044244ab8588f08ff8b3c9, type: 3}
+    sceneName: L5
+    config: {fileID: 11400000, guid: 8c925bb4f15254c4d883dfc086bea023, type: 2}
+  - sceneAsset: {fileID: 102900000, guid: 5179a1180ed3790489dc097db2e8838b, type: 3}
+    sceneName: L6
+    config: {fileID: 11400000, guid: 691652b7a92e8684a9bfe1eb38fb6a27, type: 2}
+  - sceneAsset: {fileID: 102900000, guid: 3bdc2eab510b99542873adce4dc8ec2c, type: 3}
+    sceneName: L7
+    config: {fileID: 11400000, guid: 280296f16293ec34bb1ac2e0e5101d83, type: 2}
+  - sceneAsset: {fileID: 102900000, guid: cf54d7d2d374d4e418a48627c135f91d, type: 3}
+    sceneName: L8
+    config: {fileID: 11400000, guid: f910e52855dc3d64f81a65b34014ac3b, type: 2}
+  - sceneAsset: {fileID: 102900000, guid: 63f706a12a75d324bbc963ea1f487405, type: 3}
+    sceneName: L9
+    config: {fileID: 11400000, guid: b257db030976fe34b81197263794d0e0, type: 2}
+  - sceneAsset: {fileID: 102900000, guid: 3a7e85b5db5c4b2499a1d9c132686e7e, type: 3}
+    sceneName: L10
+    config: {fileID: 11400000, guid: c8dd9119885183e429ee7b9abdaad6c0, type: 2}

@@ -28,9 +28,13 @@ public class UIManagerBase : MonoBehaviour
     public LocalizationTable generalTable;
 
     //General
-    protected virtual void Start()
+    protected virtual void Start() {
+        SaveManager.Instance.OnSaveLoaded += Init;
+    }
+
+    protected virtual void Init()
     {
-        switch (LocalizationManager.language)
+        switch (SaveManager.Instance.language)
         {
             case Language.En:
                 settings_bns[0].interactable = false;
@@ -41,10 +45,10 @@ public class UIManagerBase : MonoBehaviour
                 break;
         }
 
-        ChangeLanguage(LocalizationManager.language);
+        ChangeLanguage(SaveManager.Instance.language);
 
-        musicSlider.value = AudioManager.Instance.musicLevel;
-        soundSlider.value = AudioManager.Instance.soundLevel;
+        musicSlider.value = SaveManager.Instance.musicLevel;
+        soundSlider.value = SaveManager.Instance.soundLevel;
     }
 
     protected void SetActivePanel(Button[] bns, TMP_Text[] txts, bool newActive)
@@ -70,9 +74,9 @@ public class UIManagerBase : MonoBehaviour
         settings_bns[0].interactable = false;
         settings_bns[1].interactable = true;
 
-        LocalizationManager.language = Language.En;
+        SaveManager.Instance.language = Language.En;
 
-        ChangeLanguage(LocalizationManager.language);
+        ChangeLanguage(SaveManager.Instance.language);
     }
 
     public void OnRussianPressed()
@@ -80,9 +84,9 @@ public class UIManagerBase : MonoBehaviour
         settings_bns[0].interactable = true;
         settings_bns[1].interactable = false;
 
-        LocalizationManager.language = Language.Ru;
+        SaveManager.Instance.language = Language.Ru;
 
-        ChangeLanguage(LocalizationManager.language);
+        ChangeLanguage(SaveManager.Instance.language);
     }
 
     //Music and sounds

@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -44,6 +43,18 @@ public class PauseManager: UIManagerBase
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    protected override void Start()
+    {
+        LevelManager.Instance.OnLevelReady += ChangeInGame;
+
+        Init();
+    }
+
+    private void ChangeInGame()
+    {
+        isInGame = true;
     }
 
     //TurnOns
@@ -170,7 +181,7 @@ public class PauseManager: UIManagerBase
         }
         else if (state == PauseStates.Pause)
             OnContinuePressed();
-        else
+        else if (isInGame)
             TurnOnPause();
     }
 }

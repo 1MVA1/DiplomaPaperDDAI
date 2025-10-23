@@ -5,6 +5,20 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance;
 
+    public delegate void SaveLoadedHandler();
+    public event SaveLoadedHandler OnSaveLoaded;
+
+    [Header("Variables to save")]
+    public int levelIndex;
+
+    public int enemyDifficulty;
+    public int platformingDifficulty;
+
+    public float musicLevel;
+    public float soundLevel;
+
+    public Language language;
+
     [Header("Debug")]
     public bool isDebug = false;
 
@@ -25,25 +39,27 @@ public class SaveManager : MonoBehaviour
         if (isDebug)
             PlayerPrefs.DeleteAll();
 
-        LevelManager.Instance.levelIndex = PlayerPrefs.GetInt("levelIndex", -1);
-        LevelManager.Instance.enemyDifficulty = PlayerPrefs.GetInt("enemyDifficulty", 3);
-        LevelManager.Instance.platformingDifficulty = PlayerPrefs.GetInt("platformingDifficulty", 3);
+        levelIndex = PlayerPrefs.GetInt("levelIndex", -1);
+        enemyDifficulty = PlayerPrefs.GetInt("enemyDifficulty", 2);
+        platformingDifficulty = PlayerPrefs.GetInt("platformingDifficulty", 2);
 
-        AudioManager.Instance.musicLevel = PlayerPrefs.GetFloat("musicLevel", 0.5f);
-        AudioManager.Instance.soundLevel = PlayerPrefs.GetFloat("soundLevel", 0.5f);
+        musicLevel = PlayerPrefs.GetFloat("musicLevel", 0.5f);
+        soundLevel = PlayerPrefs.GetFloat("soundLevel", 0.5f);
 
-        LocalizationManager.language = (Language)PlayerPrefs.GetInt("language", (int)Language.En);
+        language = (Language)PlayerPrefs.GetInt("language", (int)Language.En);
+
+        OnSaveLoaded?.Invoke();
     }
 
     public void SaveGame()
     {
-        PlayerPrefs.SetInt("levelIndex", LevelManager.Instance.levelIndex);
-        PlayerPrefs.SetInt("enemyDifficulty", LevelManager.Instance.enemyDifficulty);
-        PlayerPrefs.SetInt("platformingDifficulty", LevelManager.Instance.platformingDifficulty);
+        PlayerPrefs.SetInt("levelIndex", levelIndex);
+        PlayerPrefs.SetInt("enemyDifficulty", enemyDifficulty);
+        PlayerPrefs.SetInt("platformingDifficulty", platformingDifficulty);
 
-        PlayerPrefs.SetFloat("musicLevel", AudioManager.Instance.musicLevel);
-        PlayerPrefs.SetFloat("soundLevel", AudioManager.Instance.soundLevel);
-        PlayerPrefs.SetInt("language", (int)LocalizationManager.language);
+        PlayerPrefs.SetFloat("musicLevel", musicLevel);
+        PlayerPrefs.SetFloat("soundLevel", soundLevel);
+        PlayerPrefs.SetInt("language", (int)language);
 
         PlayerPrefs.Save();
     }

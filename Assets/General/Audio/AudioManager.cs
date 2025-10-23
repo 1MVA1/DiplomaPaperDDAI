@@ -11,15 +11,11 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioMixer audioMixer;
 
     [Header("Audio settings")]
-    public float fadeDuration = 1f;
-
-    public float musicLevel = 1f;
-    public float soundLevel = 1f;
-
-    [Header("Audio settings")]
     [SerializeField] private AudioSource musicSource;
 
     [Header("Music")]
+    public float fadeDuration = 1f;
+
     public AudioClip menuMusic;
 
     private void Awake()
@@ -34,23 +30,24 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         SceneManager.sceneLoaded += OnSceneLoaded;
+        SaveManager.Instance.OnSaveLoaded += Init;
     }
 
-    private void Start()
+    private void Init()
     {
-        audioMixer.SetFloat("musicLevel", CalculateDB(musicLevel));
+        audioMixer.SetFloat("musicLevel", CalculateDB(SaveManager.Instance.musicLevel));
     }
 
     public void ChangeMusicLevel(float newLevel)
     {
-        musicLevel = newLevel;
+        SaveManager.Instance.musicLevel = newLevel;
 
-        audioMixer.SetFloat("musicLevel", CalculateDB(musicLevel));
+        audioMixer.SetFloat("musicLevel", CalculateDB(SaveManager.Instance.musicLevel));
     }
 
     public void ChangeSoundLevel(float newLevel)
     {
-        soundLevel = newLevel;
+        SaveManager.Instance.soundLevel = newLevel;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -64,7 +61,7 @@ public class AudioManager : MonoBehaviour
         if (level <= 0f)
             return -80f;
         else
-            return Mathf.Log10(musicLevel) * 20f;
+            return Mathf.Log10(level) * 20f;
     }
 
     //Music

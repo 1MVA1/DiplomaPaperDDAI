@@ -1,6 +1,7 @@
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
 public enum MenuStates
@@ -13,8 +14,9 @@ public enum MenuStates
 
 public class MenuManager: UIManagerBase
 {
-    [Header("Pause")]
+    [Header("Prefabs")]
     public GameObject pauseManagerPrefab;
+    public GameObject eventSystemPrefab;
 
     [Header("Localization")]
     public LocalizationTable menuTable;
@@ -35,11 +37,28 @@ public class MenuManager: UIManagerBase
     private int enemyDifficulty;
     private int platformDifficulty;
 
-    protected override void Start() 
+    protected override void Start()
     {
-        base.Start();
+        if (LevelManager.Instance.wasInMenu)
+            Init();
+        else
+        {
+            base.Start();
 
-        if (LevelManager.Instance.levelIndex == -1)
+            if (eventSystemPrefab != null)
+            {
+                GameObject es = GameObject.Instantiate(eventSystemPrefab);
+                Object.DontDestroyOnLoad(es);
+            }
+        }
+
+    }
+
+    protected override void Init() 
+    {
+        base.Init();
+
+        if (SaveManager.Instance.levelIndex == -1)
             main_bns[1].interactable = false;
         else
         {
@@ -63,8 +82,8 @@ public class MenuManager: UIManagerBase
     {
         TurnOffPanel();
 
-        enemyDifficulty = 3;
-        platformDifficulty = 3;
+        enemyDifficulty = 2;
+        platformDifficulty = 2;
 
         for (int i = 0; i <= 9; i++)
         {
@@ -159,20 +178,20 @@ public class MenuManager: UIManagerBase
     //New game buttons
     public void SelectEnemyDifficulty(int difficulty)
     {
-        newgame_bns[enemyDifficulty - 1].interactable = true;
+        newgame_bns[enemyDifficulty].interactable = true;
 
         enemyDifficulty = difficulty;
 
-        newgame_bns[enemyDifficulty - 1].interactable = false;
+        newgame_bns[enemyDifficulty].interactable = false;
     }
 
     public void SelectPlatformDifficulty(int difficulty)
     {
-        newgame_bns[platformDifficulty + 4].interactable = true;
+        newgame_bns[platformDifficulty + 5].interactable = true;
 
         platformDifficulty = difficulty;
 
-        newgame_bns[platformDifficulty + 4].interactable = false;
+        newgame_bns[platformDifficulty + 5].interactable = false;
     }
 
     //Localization
@@ -203,8 +222,8 @@ public class MenuManager: UIManagerBase
             if (PauseManager.Instance == null)
                 Instantiate(pauseManagerPrefab, Vector3.zero, Quaternion.identity);
 
-            LevelManager.Instance.enemyDifficulty = enemyDifficulty;
-            LevelManager.Instance.platformingDifficulty = platformDifficulty;
+            SaveManager.Instance.enemyDifficulty = enemyDifficulty;
+            SaveManager.Instance.platformingDifficulty = platformDifficulty;
 
             LevelManager.Instance.LoadLevel(0);
         }

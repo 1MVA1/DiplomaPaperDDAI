@@ -5,9 +5,42 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/General/LevelsSettings/DDA/Levels/Polygon.unity
+  - enabled: 0
+    path: Assets/General/LevelsSettings/Levels/General/Polygon.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/General/Menu.unity
+    guid: ae0d554dc9799bc468e567e9a8d58f6a
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/Level 1/L1.unity
+    guid: 2eff76a339705084d8017ff811d27c7b
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/Level 2/L2.unity
+    guid: 40c723d916d43d142a693661de19444c
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/Level 3/L3.unity
+    guid: ee9ab6a4732791a4cb657b618889e133
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/Level 4/L4.unity
+    guid: 89f4f0fb6a272814cb710a89ac07bd7a
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/Level 5/L5.unity
+    guid: 2c898e35b1044244ab8588f08ff8b3c9
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/Level 6/L6.unity
+    guid: 5179a1180ed3790489dc097db2e8838b
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/Level 7/L7.unity
+    guid: 3bdc2eab510b99542873adce4dc8ec2c
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/Level 8/L8.unity
+    guid: cf54d7d2d374d4e418a48627c135f91d
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/Level 9/L9.unity
+    guid: 63f706a12a75d324bbc963ea1f487405
+  - enabled: 1
+    path: Assets/General/LevelsSettings/Levels/Level 10/L10.unity
+    guid: 3a7e85b5db5c4b2499a1d9c132686e7e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

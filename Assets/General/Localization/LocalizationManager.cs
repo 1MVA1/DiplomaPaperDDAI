@@ -3,15 +3,13 @@ using UnityEngine;
 
 public class LocalizationManager : ScriptableObject
 {
-    public static Language language;
-
     public static string GetText(LocalizationTable table, string key)
     {
         foreach (var str in table.strings)
         {
             if (str.key == key)
             {
-                switch (language)
+                switch (SaveManager.Instance.language)
                 {
                     case Language.Ru:
                         return str.russianText;

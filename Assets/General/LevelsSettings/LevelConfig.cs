@@ -3,7 +3,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-public class SpawnData
+public class GameObjectData
 {
     public GameObject prefab;
 
@@ -11,7 +11,14 @@ public class SpawnData
     public Vector3 position;
 }
 
-[CreateAssetMenu(fileName = "LevelConfig", menuName = "DDA/Configs")]
-public class LevelConfig : ScriptableObject {
-    public List<SpawnData> data = new List<SpawnData>();
+[System.Serializable]
+public class GameObjectConfig {
+    public List<GameObjectData> data = new List<GameObjectData>();
+}
+
+[CreateAssetMenu(fileName = "LevelConfig", menuName = "Level/Config")]
+public class LevelConfig : ScriptableObject 
+{
+    public List<GameObjectConfig> enemyConfig = new List<GameObjectConfig>();
+    public List<GameObjectConfig> platformingConfig = new List<GameObjectConfig>();
 }
