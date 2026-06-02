@@ -4,12 +4,16 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - LevelFinish
-  - Death
   - Platform
   - Wall
-  - DoubleJump
-  - DeathTrigger
+  - PlayerBullet
+  - Enemy
+  - Ground
+  - PlatDeath
+  - EnemyBullet
+  - PlayerLegs
+  - Shield
+  - Death
   layers:
   - Default
   - TransparentFX
@@ -17,10 +21,10 @@ TagManager:
   - 
   - Water
   - UI
-  - Platform
-  - Player
-  - 
-  - 
+  - Surface
+  - Platforming
+  - Enemy
+  - Bullet
   - 
   - 
   - 
@@ -50,17 +54,32 @@ TagManager:
   - name: Background
     uniqueID: 2198372993
     locked: 0
+  - name: Wall
+    uniqueID: 475334875
+    locked: 0
+  - name: Ground
+    uniqueID: 3179795633
+    locked: 0
+  - name: Decor
+    uniqueID: 3519543415
+    locked: 0
+  - name: Platform
+    uniqueID: 2115008553
+    locked: 0
   - name: ActionThing
     uniqueID: 2623389027
-    locked: 0
-  - name: Player
-    uniqueID: 2499576183
     locked: 0
   - name: Enemy
     uniqueID: 2728768957
     locked: 0
-  - name: Platform
-    uniqueID: 2115008553
+  - name: Player
+    uniqueID: 2499576183
+    locked: 0
+  - name: Bullet
+    uniqueID: 1801863149
+    locked: 0
+  - name: EnemyBullet
+    uniqueID: 3253379091
     locked: 0
   m_RenderingLayers:
   - Default

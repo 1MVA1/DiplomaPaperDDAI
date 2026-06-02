@@ -1,0 +1,1131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: LevelsConfig
+  m_EditorClassIdentifier: Assembly-CSharp::LevelsConfig
+  spike: {fileID: 6626677924573056720, guid: b0d7a2b432cb6a642a0c7dcee91fe0f8, type: 3}
+  saw: {fileID: 8737821912250870422, guid: 1db15108d7f2bc447b08a3d530964c5d, type: 3}
+  voltZone: {fileID: 1433275944901925620, guid: 55978faf25abd784b9176cc6018870ee, type: 3}
+  crab: {fileID: 1598361259524634249, guid: 0a83166fb2498f34b898489f796dd14e, type: 3}
+  shooter: {fileID: 2810160824763747422, guid: 3ac8c1bc3da3d6940b4c08e3c8c0b947, type: 3}
+  stalker: {fileID: 3607338833284125604, guid: 4d542f31400d09d42ba09f4724cb951e, type: 3}
+  levels:
+  - sceneAsset: {fileID: 102900000, guid: 2eff76a339705084d8017ff811d27c7b, type: 3}
+    sceneName: L1
+    spikeConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: -4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -1, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -1, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 3.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 0
+        position: {x: -4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -0.4, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -1, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -0.4, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -0.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -1, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -0.4, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0.2, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -0.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4.6, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 2
+        position: {x: -4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -3.4, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -1, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -0.4, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0.2, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -1, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -0.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0.2, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4.6, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+    sawConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 1
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 1
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 0
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 1
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 2
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    voltZoneConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 0
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 0
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 2
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    enemyConfigs:
+    - dataCrab:
+      - difficulty: 0
+        position: {x: 7, y: -4.2, z: 0}
+        isMovingRight: 0
+      - difficulty: 0
+        position: {x: -7, y: -1.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 0
+        position: {x: 7, y: 0.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 0
+        position: {x: -3.5, y: 3.7, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 0
+        position: {x: 7, y: -4.2, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -7, y: -1.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 0
+        position: {x: 7, y: 0.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -3.5, y: 3.7, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 7, y: -4.2, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -7, y: -1.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: 7, y: 0.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -3.5, y: 3.7, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 7, y: -4.2, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: -7, y: -1.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: 7, y: 0.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 2
+        position: {x: -3.5, y: 3.7, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 2
+        position: {x: 7, y: -4.2, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: -7, y: -1.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 2
+        position: {x: 7, y: 0.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 2
+        position: {x: -3.5, y: 3.7, z: 0}
+        isMovingRight: 1
+  - sceneAsset: {fileID: 102900000, guid: 40c723d916d43d142a693661de19444c, type: 3}
+    sceneName: L2
+    spikeConfigs:
+    - data: []
+    - data:
+      - difficulty: 1
+        position: {x: -1, y: 0, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1, y: 0, z: 0}
+        size: 1
+        rotation: 0
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 0
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 2
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+  - sceneAsset: {fileID: 102900000, guid: ee9ab6a4732791a4cb657b618889e133, type: 3}
+    sceneName: L3
+    spikeConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 0
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 2
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 0
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+  - sceneAsset: {fileID: 102900000, guid: 3c47169430e650a479e2cefe95a5ab3e, type: 3}
+    sceneName: L4
+    spikeConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 0
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 2
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+  - sceneAsset: {fileID: 102900000, guid: e1d898d403293b2418c3105af6e5656a, type: 3}
+    sceneName: L5
+    spikeConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+  - sceneAsset: {fileID: 102900000, guid: cf54d7d2d374d4e418a48627c135f91d, type: 3}
+    sceneName: L6
+    spikeConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+  - sceneAsset: {fileID: 102900000, guid: 63f706a12a75d324bbc963ea1f487405, type: 3}
+    sceneName: L7
+    spikeConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+  - sceneAsset: {fileID: 102900000, guid: 3a7e85b5db5c4b2499a1d9c132686e7e, type: 3}
+    sceneName: L8
+    spikeConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+  - sceneAsset: {fileID: 102900000, guid: 304713031ac6542488107eb58eabda13, type: 3}
+    sceneName: L9
+    spikeConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+  - sceneAsset: {fileID: 102900000, guid: aa4b924ab75bef843b9e45378f4f0bb9, type: 3}
+    sceneName: L10
+    spikeConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+  - sceneAsset: {fileID: 102900000, guid: ae0c4ab5baf0d104a94fe8c1ee28dcd6, type: 3}
+    sceneName: L11
+    spikeConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+  - sceneAsset: {fileID: 102900000, guid: 4c9d7757b67f38343aa5e8d7c0ea43c8, type: 3}
+    sceneName: L12
+    spikeConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    sawConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    voltZoneConfigs:
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    - data: []
+    enemyConfigs:
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
+    - dataCrab: []
+      dataShooter: []
+      dataStalker: []
