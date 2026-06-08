@@ -32,7 +32,6 @@ public class Crab : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
     public float wallCheckDistance = 0.25f;
 
     [Header("Diff")]
-    public int[] HPs = { 3, 4, 5 };
     public float[] speeds = { 0.8f, 1f, 1.1f };
     public float[] chaseSpeeds = { 1f, 1.2f, 1.3f };
 
@@ -40,7 +39,7 @@ public class Crab : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
     public float jumpCooldown = 1.5f;
     public float jumpAngle = 30f;
 
-    private int HP;
+    private int HP = 3;
     private float speed;
     private float chaseSpeed;
 
@@ -91,7 +90,6 @@ public class Crab : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
         idx = (int)diff;
         sr.sprite = sprites1[idx];
 
-        HP = HPs[idx];
         speed = speeds[idx];
         chaseSpeed = chaseSpeeds[idx];
 
@@ -485,7 +483,7 @@ public class Crab : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
         isMovingRight = startIsMovingRight;
         player = null;
 
-        HP = HPs[idx];
+        HP = 3;
 
         sr.enabled = true;
         cColl.enabled = true;

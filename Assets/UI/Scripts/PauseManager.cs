@@ -20,12 +20,14 @@ public class PauseManager: UIManagerBase
     [Header("Pause")]
     public Button[] pause_bns;
     public TMP_Text[] pause_txts;
+    public Image img;
 
-    [Header("Debug")]
+    [HideInInspector]
     public bool isInGame = false;
 
+    private PlayerMovement player;
+
     private PauseStates state = PauseStates.Null;
-    // ¬ы действительно хотите вернутьс€ в меню?
 
     private void Awake()
     {
@@ -39,26 +41,13 @@ public class PauseManager: UIManagerBase
         DontDestroyOnLoad(gameObject);
     }
 
-    protected void Start()
-    {
-        //LevelManager.Instance.OnLevelReady += ChangeInGame;
-    }
-
-    private void ChangeInGame()
-    {
-        isInGame = true;
-    }
-
     //TurnOns
     public void TurnOnPause()
     {
         TurnOffPanel();
 
-        //
-        //settings_txts[0].text = LocalizationManager.GetText(pauseTable, "pause_text");
-        //
-
         state = PauseStates.Pause;
+        img.gameObject.SetActive(true);
         SetActivePanel(pause_bns, pause_txts, true);
     }
 
@@ -69,9 +58,6 @@ public class PauseManager: UIManagerBase
         //
         confirm_bns[0].onClick.RemoveAllListeners();
         confirm_bns[0].onClick.AddListener(BackToMenu);
-
-        //confirm_txts[0].text = LocalizationManager.GetText(pauseTable, "back_text");
-        //
 
         state = PauseStates.Confirm;
         SetActivePanel(confirm_bns, confirm_txts, true);
@@ -109,6 +95,7 @@ public class PauseManager: UIManagerBase
     //Special
     public void OnContinuePressed()
     {
+        img.gameObject.SetActive(false);
         TurnOffPanel();
 
         state = PauseStates.Null;
@@ -118,19 +105,17 @@ public class PauseManager: UIManagerBase
 
     public void BackToMenu()
     {
+        isInGame = false;
+
         SceneManager.LoadScene("Menu");
 
         Time.timeScale = 1f;
-
-        Destroy(gameObject);
     }
 
     public override void OnEscapePressed()
     {
         if (state == PauseStates.Null && isInGame)
         {
-            Time.timeScale = 0f;
-
             TurnOnPause();
         }
         else if (state == PauseStates.Pause)

@@ -488,25 +488,472 @@ MonoBehaviour:
   - sceneAsset: {fileID: 102900000, guid: 40c723d916d43d142a693661de19444c, type: 3}
     sceneName: L2
     spikeConfigs:
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: -4.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 0
+        position: {x: -4.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 0
+        position: {x: 1.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 0
+        position: {x: 1.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 0
+        position: {x: -4.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 0
+        position: {x: -4.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 1.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 1.6, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.6, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
     - data:
       - difficulty: 1
-        position: {x: -1, y: 0, z: 0}
-        size: 1
+        position: {x: -4.3, y: -4.4, z: 0}
+        size: 0.5
         rotation: 0
       - difficulty: 1
-        position: {x: 1, y: 0, z: 0}
-        size: 1
+        position: {x: -4.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4, y: -4.4, z: 0}
+        size: 0.5
         rotation: 0
-    - data: []
-    - data: []
-    - data: []
+      - difficulty: 1
+        position: {x: -4, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 1.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 1.6, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.6, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 1
+        position: {x: -4.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 1.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 1.6, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.6, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 1.9, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.9, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 2
+        position: {x: -4.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: -4, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: -3.7, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: -3.7, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 1.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 1.6, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.6, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 1.9, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.9, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
     sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 1
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 1.25
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 1
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 0
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 1.25
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 2
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 3
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 3
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 3
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
     voltZoneConfigs:
     - data:
       - difficulty: 0
@@ -594,35 +1041,3038 @@ MonoBehaviour:
         size: 6
         isHorizontal: 0
     enemyConfigs:
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+    - dataCrab:
+      - difficulty: 0
+        position: {x: -4.2, y: 0.91, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 0
+        position: {x: 5.5, y: 3.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 0
+        position: {x: 6.5, y: -2, z: 0}
+        isMovingRight: 0
+      - difficulty: 0
+        position: {x: -3.6, y: -0.5, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -4.2, y: 0.91, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: 5.5, y: 3.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 0
+        position: {x: 6.5, y: -2, z: 0}
+        isMovingRight: 0
+      - difficulty: 0
+        position: {x: -3.6, y: -0.5, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -4.2, y: 0.91, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: 5.5, y: 3.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: 6.5, y: -2, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -3.6, y: -0.5, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 2
+        position: {x: -4.2, y: 0.91, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 2
+        position: {x: 5.5, y: 3.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: 6.5, y: -2, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -3.6, y: -0.5, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 2
+        position: {x: -4.2, y: 0.91, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 2
+        position: {x: 5.5, y: 3.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 2
+        position: {x: 6.5, y: -2, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: -3.6, y: -0.5, z: 0}
+        isMovingRight: 0
   - sceneAsset: {fileID: 102900000, guid: ee9ab6a4732791a4cb657b618889e133, type: 3}
     sceneName: L3
     spikeConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 0
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: -0.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 5.1, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 2
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -3.5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: -0.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 5.1, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
     sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 0
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 2
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    voltZoneConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 0
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 2
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 0
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    enemyConfigs:
+    - dataCrab:
+      - difficulty: 0
+        position: {x: 2.5, y: -4.1, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 0
+        position: {x: -4.5, y: -4.3, z: 0}
+        isMovingRight: 1
+      - difficulty: 0
+        position: {x: 8.1, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 0
+        position: {x: -3.3, y: 3.2, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 2.5, y: -4.1, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 0
+        position: {x: -4.5, y: -4.3, z: 0}
+        isMovingRight: 1
+      - difficulty: 0
+        position: {x: 8.1, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -3.3, y: 3.2, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 2.5, y: -4.1, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -4.5, y: -4.3, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 8.1, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -3.3, y: 3.2, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 2
+        position: {x: 2.5, y: -4.1, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -4.5, y: -4.3, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 8.1, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 2
+        position: {x: -3.3, y: 3.2, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 2
+        position: {x: 2.5, y: -4.1, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 2
+        position: {x: -4.5, y: -4.3, z: 0}
+        isMovingRight: 1
+      - difficulty: 2
+        position: {x: 8.1, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 2
+        position: {x: -3.3, y: 3.2, z: 0}
+        isMovingRight: 0
+  - sceneAsset: {fileID: 102900000, guid: 3c47169430e650a479e2cefe95a5ab3e, type: 3}
+    sceneName: L4
+    spikeConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 2
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    sawConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: -5, y: -3.6, z: 0}
+        size: 1.75
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -5, y: -3.6}
+        - {x: 5.8, y: -3.6}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 0
+        position: {x: -5, y: -3.6, z: 0}
+        size: 1.75
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -5, y: -3.6}
+        - {x: 5.8, y: -3.6}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: -5, y: -3.6, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -5, y: -3.6}
+        - {x: 5.8, y: -3.6}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 2
+        position: {x: 7, y: 0, z: 0}
+        size: 2.5
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 2
+        position: {x: -5, y: -3.6, z: 0}
+        size: 1.75
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -5, y: -3.6}
+        - {x: 5.8, y: -3.6}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    voltZoneConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 0
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 2
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    enemyConfigs:
+    - dataCrab:
+      - difficulty: 0
+        position: {x: -1.75, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataShooter:
+      - difficulty: 0
+        position: {x: -3.9, y: -2.5, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 0
+        position: {x: -0.9, y: 1.25, z: 0}
+        isMovingRight: 1
+      - difficulty: 0
+        position: {x: -6.3, y: 4, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -1.75, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataShooter:
+      - difficulty: 0
+        position: {x: -3.9, y: -2.5, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 0
+        position: {x: -0.9, y: 1.25, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -6.3, y: 4, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -1.75, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataShooter:
+      - difficulty: 1
+        position: {x: -3.9, y: -2.5, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 1
+        position: {x: -0.9, y: 1.25, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -6.3, y: 4, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 2
+        position: {x: -1.75, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataShooter:
+      - difficulty: 1
+        position: {x: -3.9, y: -2.5, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 1
+        position: {x: -0.9, y: -2.5, z: 0}
+        isMovingRight: 1
+      - difficulty: 2
+        position: {x: -6.3, y: 4, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 2
+        position: {x: -1.75, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataShooter:
+      - difficulty: 2
+        position: {x: -3.9, y: -2.5, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 2
+        position: {x: -0.9, y: 1.25, z: 0}
+        isMovingRight: 1
+      - difficulty: 2
+        position: {x: -6.3, y: 4, z: 0}
+        isMovingRight: 1
+  - sceneAsset: {fileID: 102900000, guid: e1d898d403293b2418c3105af6e5656a, type: 3}
+    sceneName: L5
+    spikeConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: -5.5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 1.8, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 4.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 2.5, y: -1.9, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -1.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 0.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 3.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 0
+        position: {x: -5.5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 1.8, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 4.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 2.5, y: -1.9, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -1.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 0.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 3.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -5.5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.8, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.5, y: -1.9, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -5.5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.8, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.5, y: -1.9, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 2
+        position: {x: -5.5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.8, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 2.5, y: -1.9, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -1.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+    sawConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 0
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 2
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    voltZoneConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 0
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 0
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 2
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    enemyConfigs:
+    - dataCrab:
+      - difficulty: 0
+        position: {x: -1.5, y: -4.1, z: 0}
+        isMovingRight: 0
+      - difficulty: 0
+        position: {x: -0.9, y: 3.2, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 0
+        position: {x: -1.4, y: -1.8, z: 0}
+        isMovingRight: 0
+      - difficulty: 0
+        position: {x: 1.3, y: 0.5, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 0
+        position: {x: -4.9, y: 1.4, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -1.5, y: -4.1, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -0.9, y: 3.2, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 0
+        position: {x: -1.4, y: -1.8, z: 0}
+        isMovingRight: 0
+      - difficulty: 0
+        position: {x: 1.3, y: 0.5, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 1
+        position: {x: -4.9, y: 1.4, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -1.5, y: -4.1, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -0.9, y: 3.2, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.4, y: -1.8, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 1.3, y: 0.5, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 1
+        position: {x: -4.9, y: 1.4, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 2
+        position: {x: -1.5, y: -4.1, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: -0.9, y: 3.2, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.4, y: -1.8, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 1.3, y: 0.5, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 2
+        position: {x: -4.9, y: 1.4, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 2
+        position: {x: -1.5, y: -4.1, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: -0.9, y: 3.2, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 2
+        position: {x: -1.4, y: -1.8, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: 1.3, y: 0.5, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 2
+        position: {x: -4.9, y: 1.4, z: 0}
+        isMovingRight: 1
+  - sceneAsset: {fileID: 102900000, guid: cf54d7d2d374d4e418a48627c135f91d, type: 3}
+    sceneName: L6
+    spikeConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: -4.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 0
+        position: {x: -4.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 0
+        position: {x: -4.3, y: 0.6, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 0
+        position: {x: -4.3, y: 2.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 0
+        position: {x: 3.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 0
+        position: {x: 3.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 1
+        position: {x: -4.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4.3, y: 0.6, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.3, y: 2.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4, y: 0.6, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4, y: 2.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 3.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 3.6, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.6, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 1
+        position: {x: -4.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4.3, y: 0.6, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.3, y: 2.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4, y: 0.6, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4, y: 2.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 3.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 3.6, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.6, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 1
+        position: {x: -4.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4.3, y: 0.6, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.3, y: 2.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -4, y: 0.6, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4, y: 2.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 3.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 3.6, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.6, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 2
+        position: {x: -4.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: -4, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: -4.3, y: 0.6, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4.3, y: 2.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: -4, y: 0.6, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4, y: 2.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 3.3, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.3, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 3.6, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.6, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+    sawConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 0
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 2
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    voltZoneConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 0
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 2
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    enemyConfigs:
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -8, y: -1.8, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -5.4, y: 3.4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -1.9, y: -2, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -2.4, y: 1.3, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 6, y: 4, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -8, y: -1.8, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -5.4, y: 3.4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -1.9, y: -2, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -2.4, y: 1.3, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 6, y: 4, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -8, y: -1.8, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -5.4, y: 3.4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -1.9, y: -2, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -2.4, y: 1.3, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 6, y: 4, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -8, y: -1.8, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -5.4, y: 3.4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -1.9, y: -2, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -2.4, y: 1.3, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 6, y: 4, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -8, y: -1.8, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -5.4, y: 3.4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -1.9, y: -2, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -2.4, y: 1.3, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 6, y: 4, z: 0}
+        isMovingRight: 0
+  - sceneAsset: {fileID: 102900000, guid: 63f706a12a75d324bbc963ea1f487405, type: 3}
+    sceneName: L7
+    spikeConfigs:
+    - data:
+      - difficulty: 1
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: 0, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.75, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0, y: 0, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.75, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 2
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0, y: 0, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.75, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+    sawConfigs:
+    - data:
+      - difficulty: 0
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 0
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
     voltZoneConfigs:
     - data:
       - difficulty: 0
@@ -711,421 +4161,3383 @@ MonoBehaviour:
         isHorizontal: 1
     enemyConfigs:
     - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-  - sceneAsset: {fileID: 102900000, guid: 3c47169430e650a479e2cefe95a5ab3e, type: 3}
-    sceneName: L4
-    spikeConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    voltZoneConfigs:
-    - data:
-      - difficulty: 0
-        position: {x: 7.5, y: -0.95, z: 0}
-        size: 6
-        isHorizontal: 1
-      - difficulty: 0
-        position: {x: 6.1, y: 3.85, z: 0}
-        size: 5
-        isHorizontal: 0
-      - difficulty: 0
-        position: {x: -0.9, y: -0.45, z: 0}
-        size: 6
-        isHorizontal: 1
-      - difficulty: 0
-        position: {x: -7, y: -0.45, z: 0}
-        size: 8
-        isHorizontal: 1
-    - data:
-      - difficulty: 0
-        position: {x: 7.5, y: -0.95, z: 0}
-        size: 6
-        isHorizontal: 1
+      dataShooter:
       - difficulty: 1
-        position: {x: 6.1, y: 3.85, z: 0}
-        size: 5
-        isHorizontal: 0
-      - difficulty: 0
-        position: {x: -0.9, y: -0.45, z: 0}
-        size: 6
-        isHorizontal: 1
+        position: {x: 1, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
       - difficulty: 1
-        position: {x: -7, y: -0.45, z: 0}
-        size: 8
-        isHorizontal: 1
-    - data:
+        position: {x: -5.2, y: 4, z: 0}
+        isMovingRight: 0
       - difficulty: 1
-        position: {x: 7.5, y: -0.95, z: 0}
-        size: 6
-        isHorizontal: 1
+        position: {x: 0, y: 3.4, z: 0}
+        isMovingRight: 0
       - difficulty: 1
-        position: {x: 6.1, y: 3.85, z: 0}
-        size: 5
-        isHorizontal: 0
+        position: {x: 7, y: 3.4, z: 0}
+        isMovingRight: 0
+    - dataCrab: []
+      dataShooter:
       - difficulty: 1
-        position: {x: -0.9, y: -0.45, z: 0}
-        size: 6
-        isHorizontal: 1
+        position: {x: 1, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
       - difficulty: 1
-        position: {x: -7, y: -0.45, z: 0}
-        size: 8
-        isHorizontal: 1
-    - data:
+        position: {x: -5.2, y: 4, z: 0}
+        isMovingRight: 0
       - difficulty: 1
-        position: {x: 7.5, y: -0.95, z: 0}
-        size: 6
-        isHorizontal: 1
-      - difficulty: 2
-        position: {x: 6.1, y: 3.85, z: 0}
-        size: 5
-        isHorizontal: 0
+        position: {x: 0, y: 3.4, z: 0}
+        isMovingRight: 0
       - difficulty: 1
-        position: {x: -0.9, y: -0.45, z: 0}
-        size: 6
-        isHorizontal: 1
-      - difficulty: 2
-        position: {x: -7, y: -0.45, z: 0}
-        size: 8
-        isHorizontal: 1
-    - data:
-      - difficulty: 2
-        position: {x: 7.5, y: -0.95, z: 0}
-        size: 6
-        isHorizontal: 1
-      - difficulty: 2
-        position: {x: 6.1, y: 3.85, z: 0}
-        size: 5
-        isHorizontal: 0
-      - difficulty: 2
-        position: {x: -0.9, y: -0.45, z: 0}
-        size: 6
-        isHorizontal: 1
-      - difficulty: 2
-        position: {x: -7, y: -0.45, z: 0}
-        size: 8
-        isHorizontal: 1
-    enemyConfigs:
+        position: {x: 7, y: 3.4, z: 0}
+        isMovingRight: 0
     - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+      dataShooter:
+      - difficulty: 1
+        position: {x: 1, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -5.2, y: 4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 0, y: 3.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7, y: 3.4, z: 0}
+        isMovingRight: 0
     - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+      dataShooter:
+      - difficulty: 1
+        position: {x: 1, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -5.2, y: 4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 0, y: 3.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7, y: 3.4, z: 0}
+        isMovingRight: 0
     - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-  - sceneAsset: {fileID: 102900000, guid: e1d898d403293b2418c3105af6e5656a, type: 3}
-    sceneName: L5
-    spikeConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    voltZoneConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    enemyConfigs:
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-  - sceneAsset: {fileID: 102900000, guid: cf54d7d2d374d4e418a48627c135f91d, type: 3}
-    sceneName: L6
-    spikeConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    voltZoneConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    enemyConfigs:
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-  - sceneAsset: {fileID: 102900000, guid: 63f706a12a75d324bbc963ea1f487405, type: 3}
-    sceneName: L7
-    spikeConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    voltZoneConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    enemyConfigs:
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+      dataShooter:
+      - difficulty: 1
+        position: {x: 1, y: -4.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -5.2, y: 4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 0, y: 3.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7, y: 3.4, z: 0}
+        isMovingRight: 0
   - sceneAsset: {fileID: 102900000, guid: 3a7e85b5db5c4b2499a1d9c132686e7e, type: 3}
     sceneName: L8
     spikeConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 1
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.6, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.3, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.8, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -0.85, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0.85, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1.8, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.8, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
     sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: -5, y: -3.6, z: 0}
+        size: 1.75
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -5, y: -3.6}
+        - {x: 5.8, y: -3.6}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 0
+        position: {x: -5, y: -3.6, z: 0}
+        size: 1.75
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -5, y: -3.6}
+        - {x: 5.8, y: -3.6}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: -5, y: -3.6, z: 0}
+        size: 1.75
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -5, y: -3.6}
+        - {x: 5.8, y: -3.6}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: -5, y: -3.6, z: 0}
+        size: 1.75
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -5, y: -3.6}
+        - {x: 5.8, y: -3.6}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 2
+        position: {x: -5, y: -3.6, z: 0}
+        size: 1.75
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -5, y: -3.6}
+        - {x: 5.8, y: -3.6}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
     voltZoneConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 0
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 2
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
     enemyConfigs:
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -0.6, y: -2.1, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 4, y: -2.3, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.5, y: -4.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: 1.9, y: 3.8, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -3.6, y: 3.8, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -0.6, y: -2.1, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 4, y: -2.3, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.5, y: -4.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: 1.9, y: 3.8, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -3.6, y: 3.8, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -0.6, y: -2.1, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 4, y: -2.3, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.5, y: -4.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: 1.9, y: 3.8, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -3.6, y: 3.8, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 2
+        position: {x: -0.6, y: -2.1, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: 4, y: -2.3, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.5, y: -4.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: 1.9, y: 3.8, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -3.6, y: 3.8, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -0.6, y: -2.1, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 4, y: -2.3, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.5, y: -4.4, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: 1.9, y: 3.8, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -3.6, y: 3.8, z: 0}
+        isMovingRight: 1
   - sceneAsset: {fileID: 102900000, guid: 304713031ac6542488107eb58eabda13, type: 3}
     sceneName: L9
     spikeConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: -4.8, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -4.8, y: -2.2, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 0
+        position: {x: -0.3, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -0.3, y: 2.6, z: 0}
+        size: 1
+        rotation: 180
+    - data:
+      - difficulty: 0
+        position: {x: -4.8, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -4.8, y: -2.2, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 1
+        position: {x: -1, y: -4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1, y: -1.9, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 0
+        position: {x: -0.3, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -0.3, y: 2.6, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 1
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: 2.6, z: 0}
+        size: 1
+        rotation: 180
+    - data:
+      - difficulty: 1
+        position: {x: -4.8, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.8, y: -2.2, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 1
+        position: {x: -1, y: -4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1, y: -1.9, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 1
+        position: {x: -0.3, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -0.3, y: 2.6, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 1
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: 2.6, z: 0}
+        size: 1
+        rotation: 180
+    - data:
+      - difficulty: 1
+        position: {x: -4.8, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.8, y: -2.2, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 2
+        position: {x: -1, y: -4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -1, y: -1.9, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 1
+        position: {x: -0.3, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -0.3, y: 2.6, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 2
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4, y: 2.6, z: 0}
+        size: 1
+        rotation: 180
+    - data:
+      - difficulty: 2
+        position: {x: -4.8, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4.8, y: -2.2, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 2
+        position: {x: -1, y: -4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -1, y: -1.9, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 2
+        position: {x: -0.3, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -0.3, y: 2.6, z: 0}
+        size: 1
+        rotation: 180
+      - difficulty: 2
+        position: {x: 4, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4, y: 2.6, z: 0}
+        size: 1
+        rotation: 180
     sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 3
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 3
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 3
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 3
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 4
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
+    - data:
+      - difficulty: 2
+        position: {x: -4.6, y: -0.7, z: 0}
+        size: 1.8
+        speed: 3
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.6, y: -0.7}
+        - {x: 4.6, y: -0.7}
+        - {x: 4.6, y: -1.7}
+        - {x: -4.6, y: -1.7}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 4.5, y: 1.8, z: 0}
+        size: 1.8
+        speed: 3
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 4.5, y: 1.8}
+        - {x: -5.1, y: 1.8}
+        - {x: -5.1, y: 0.6}
+        - {x: 4.5, y: 0.6}
+        isCycle: 1
     voltZoneConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 0
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 0
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+    - data:
+      - difficulty: 2
+        position: {x: 5.05, y: -3.53, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: -1.15, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 5.05, y: 1.25, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -5.05, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
     enemyConfigs:
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 4.7, y: -1.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -4.8, y: 0.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.8, y: 0.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 6.2, y: 3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -2.1, y: -1.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7.5, y: -0.7, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 4.7, y: -1.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -4.8, y: 0.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.8, y: 0.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 6.2, y: 3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -2.1, y: -1.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7.5, y: -0.7, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 4.7, y: -1.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -4.8, y: 0.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.8, y: 0.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 6.2, y: 3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -2.1, y: -1.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7.5, y: -0.7, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 2
+        position: {x: 4.7, y: -1.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: -4.8, y: 0.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: -1.8, y: 0.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 6.2, y: 3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -2.1, y: -1.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: 7.5, y: -0.7, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 2
+        position: {x: 4.7, y: -1.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: -4.8, y: 0.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 2
+        position: {x: -1.8, y: 0.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: 6.2, y: 3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 2
+        position: {x: -2.1, y: -1.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 2
+        position: {x: 7.5, y: -0.7, z: 0}
+        isMovingRight: 0
   - sceneAsset: {fileID: 102900000, guid: aa4b924ab75bef843b9e45378f4f0bb9, type: 3}
     sceneName: L10
     spikeConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: -2.8, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 0
+        position: {x: -2.8, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 0
+        position: {x: 2.1, y: -3.5, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 0
+        position: {x: 1.8, y: -3.5, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 1
+        position: {x: -2.8, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.8, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -2.5, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.5, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 0
+        position: {x: 1.8, y: -3.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 0
+        position: {x: 1.8, y: -1.5, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 1
+        position: {x: -2.8, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.8, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -2.5, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.5, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 2.1, y: -3.5, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.8, y: -3.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 2.1, y: -1.5, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.8, y: -1.5, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 1
+        position: {x: -2.8, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.8, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: -2.5, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.5, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 2.1, y: -3.5, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.8, y: -3.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 1
+        position: {x: 2.1, y: -1.5, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 1
+        position: {x: 1.8, y: -1.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 2.1, y: 0, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.8, y: 0, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 2.1, y: -2, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.8, y: -2, z: 0}
+        size: 0.5
+        rotation: 180
+    - data:
+      - difficulty: 2
+        position: {x: -2.8, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: -2.8, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: -2.5, y: -4.4, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: -2.5, y: -2.9, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 2.1, y: -3.5, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.8, y: -3.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 2.1, y: -1.5, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.8, y: -1.5, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 2.1, y: 0, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.8, y: 0, z: 0}
+        size: 0.5
+        rotation: 180
+      - difficulty: 2
+        position: {x: 2.1, y: -2, z: 0}
+        size: 0.5
+        rotation: 0
+      - difficulty: 2
+        position: {x: 1.8, y: -2, z: 0}
+        size: 0.5
+        rotation: 180
     sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 0
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 2.5
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
+    - data:
+      - difficulty: 2
+        position: {x: 7.8, y: 3.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.8, y: 3.4}
+        - {x: 7.8, y: -3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 6.7, y: -3.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 6.7, y: -3.4}
+        - {x: 6.7, y: 3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -6.4, y: -1.7, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.4, y: -1.7}
+        - {x: -8, y: 0}
+        - {x: -6.4, y: 1.7}
+        - {x: -8, y: 3.4}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 2.3, y: -0.4, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 2.3, y: -0.4}
+        - {x: -4, y: -0.4}
+        - {x: -4, y: -1.9}
+        - {x: 2.3, y: -1.9}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 3.9, y: -1.8, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 3.9, y: -1.8}
+        - {x: 3.9, y: 2}
+        isCycle: 0
     voltZoneConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 0
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 1
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
+    - data:
+      - difficulty: 2
+        position: {x: 7.27, y: 0, z: 0}
+        size: 7
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 0, y: 3.95, z: 0}
+        size: 4
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 0, y: -1.1, z: 0}
+        size: 6
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 2.5, y: 1.58, z: 0}
+        size: 6
+        isHorizontal: 0
     enemyConfigs:
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
-    - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -8, y: -1, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: 5.7, y: 3.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -5.5, y: 3.4, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 1
+        position: {x: 8, y: -2.3, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 0, y: 1.2, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -8, y: -1, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: 5.7, y: 3.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -5.5, y: 3.4, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 1
+        position: {x: 8, y: -2.3, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 0, y: 1.2, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -8, y: -1, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: 5.7, y: 3.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -5.5, y: 3.4, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 1
+        position: {x: 8, y: -2.3, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 0, y: 1.2, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -8, y: -1, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: 5.7, y: 3.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -5.5, y: 3.4, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 1
+        position: {x: 8, y: -2.3, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 0, y: 1.2, z: 0}
+        isMovingRight: 1
+    - dataCrab:
+      - difficulty: 1
+        position: {x: -8, y: -1, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 0, y: 3.6, z: 0}
+        isMovingRight: 1
+      dataShooter:
+      - difficulty: 1
+        position: {x: 5.7, y: 3.4, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -5.5, y: 3.4, z: 0}
+        isMovingRight: 1
+      dataStalker:
+      - difficulty: 1
+        position: {x: 8, y: -2.3, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 0, y: 1.2, z: 0}
+        isMovingRight: 1
   - sceneAsset: {fileID: 102900000, guid: ae0c4ab5baf0d104a94fe8c1ee28dcd6, type: 3}
     sceneName: L11
     spikeConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 1
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.6, y: -4.3, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 2.3, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4.6, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 2.3, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4.6, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 2
+        position: {x: -5.3, y: 3.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -3.9, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -3.4, y: 1.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4.7, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -2.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: 1.1, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: 0.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 2.3, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4.6, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
     sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 0
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 1.5
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 1
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
+    - data:
+      - difficulty: 2
+        position: {x: -6.5, y: -3.3, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -6.5, y: -3.3}
+        - {x: -7.6, y: -2}
+        - {x: -6.5, y: -0.7}
+        - {x: -7.6, y: 0.6}
+        - {x: -6.5, y: 1.9}
+        - {x: -7.6, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -0.6, y: 0, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -0.6, y: -3.3}
+        - {x: 0.5, y: -2}
+        - {x: -0.6, y: -0.7}
+        - {x: 0.5, y: 0.6}
+        - {x: -0.6, y: 1.9}
+        - {x: 0.5, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: 7.7, y: -3.3, z: 0}
+        size: 2
+        speed: 2.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 7.7, y: -3.3}
+        - {x: 6.6, y: -2}
+        - {x: 7.7, y: -0.7}
+        - {x: 6.6, y: 0.6}
+        - {x: 7.7, y: 1.9}
+        - {x: 6.6, y: 3.2}
+        isCycle: 0
     voltZoneConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 0
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 2
+        position: {x: -7.05, y: 2.6, z: 0}
+        size: 0
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -1.75, y: -3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 1.75, y: 3.75, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: 7.05, y: 2.6, z: 0}
+        size: 8
+        isHorizontal: 1
     enemyConfigs:
-    - dataCrab: []
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 3.4, y: -3.9, z: 0}
+        isMovingRight: 1
       dataShooter: []
-      dataStalker: []
-    - dataCrab: []
+      dataStalker:
+      - difficulty: 1
+        position: {x: 3.5, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -3.5, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 1, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -7, y: 2.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7, y: 2.6, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 3.4, y: -3.9, z: 0}
+        isMovingRight: 1
       dataShooter: []
-      dataStalker: []
-    - dataCrab: []
+      dataStalker:
+      - difficulty: 1
+        position: {x: 3.5, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -3.5, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 1, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -7, y: 2.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7, y: 2.6, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 3.4, y: -3.9, z: 0}
+        isMovingRight: 1
       dataShooter: []
-      dataStalker: []
-    - dataCrab: []
+      dataStalker:
+      - difficulty: 1
+        position: {x: 3.5, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -3.5, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 1, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -7, y: 2.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7, y: 2.6, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 3.4, y: -3.9, z: 0}
+        isMovingRight: 1
       dataShooter: []
-      dataStalker: []
-    - dataCrab: []
+      dataStalker:
+      - difficulty: 1
+        position: {x: 3.5, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -3.5, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 1, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -7, y: 2.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7, y: 2.6, z: 0}
+        isMovingRight: 0
+    - dataCrab:
+      - difficulty: 1
+        position: {x: 3.4, y: -3.9, z: 0}
+        isMovingRight: 1
       dataShooter: []
-      dataStalker: []
+      dataStalker:
+      - difficulty: 1
+        position: {x: 3.5, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -3.5, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 1, y: 3.9, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: -7, y: 2.6, z: 0}
+        isMovingRight: 0
+      - difficulty: 1
+        position: {x: 7, y: 2.6, z: 0}
+        isMovingRight: 0
   - sceneAsset: {fileID: 102900000, guid: 4c9d7757b67f38343aa5e8d7c0ea43c8, type: 3}
     sceneName: L12
     spikeConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 0
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 0
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1.6, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -1.6, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 1
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -1.6, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+    - data:
+      - difficulty: 2
+        position: {x: 3.8, y: 2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 5.5, y: -0.7, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 3.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 4, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -4.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0.5, y: -4.4, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: 0, y: 2.6, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -1.6, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: 2.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 1
+        position: {x: -8.3, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.8, y: -1.2, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -6.2, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -5.7, y: -2.5, z: 0}
+        size: 1
+        rotation: 0
+      - difficulty: 2
+        position: {x: -7.2, y: 0.2, z: 0}
+        size: 1
+        rotation: 0
     sawConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 0
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 0
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 0
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 1
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 1
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 1
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
+    - data:
+      - difficulty: 2
+        position: {x: 8, y: 2.5, z: 0}
+        size: 2.5
+        speed: 2
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -3.8}
+        - {x: 7, y: -3.8}
+        - {x: 7, y: 2.5}
+        isCycle: 1
+      - difficulty: 2
+        position: {x: 1.95, y: -1.9, z: 0}
+        size: 2
+        speed: 2
+        timeStop: 1
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: 1.95, y: -1.9}
+        - {x: 1.95, y: 3.2}
+        isCycle: 0
+      - difficulty: 2
+        position: {x: -4.35, y: -1, z: 0}
+        size: 2
+        speed: 1.5
+        timeStop: 0
+        acceleration: 0
+        maxSpeed: 0
+        points:
+        - {x: -4.35, y: -1}
+        - {x: -3, y: -1}
+        - {x: -4.35, y: 2.55}
+        - {x: -3, y: 2.55}
+        isCycle: 1
     voltZoneConfigs:
-    - data: []
-    - data: []
-    - data: []
-    - data: []
-    - data: []
+    - data:
+      - difficulty: 0
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 0
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 0
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 0
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 1
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 1
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 1
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
+    - data:
+      - difficulty: 2
+        position: {x: 7.5, y: -0.95, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: 6.1, y: 3.85, z: 0}
+        size: 5
+        isHorizontal: 0
+      - difficulty: 2
+        position: {x: -0.9, y: -0.45, z: 0}
+        size: 6
+        isHorizontal: 1
+      - difficulty: 2
+        position: {x: -7, y: -0.45, z: 0}
+        size: 8
+        isHorizontal: 1
     enemyConfigs:
     - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+      dataShooter:
+      - difficulty: 0
+        position: {x: 4.4, y: 3.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 0
+        position: {x: -3.8, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 0
+        position: {x: -1, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 0
+        position: {x: 2, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 0
+        position: {x: -6.3, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 0
+        position: {x: 7.5, y: 4, z: 0}
+        isMovingRight: 1
     - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+      dataShooter:
+      - difficulty: 0
+        position: {x: 4.4, y: 3.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 0
+        position: {x: -3.8, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 0
+        position: {x: -1, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 2, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -6.3, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 7.5, y: 4, z: 0}
+        isMovingRight: 1
     - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+      dataShooter:
+      - difficulty: 1
+        position: {x: 4.4, y: 3.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -3.8, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -1, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 2, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -6.3, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: 7.5, y: 4, z: 0}
+        isMovingRight: 1
     - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+      dataShooter:
+      - difficulty: 1
+        position: {x: 4.4, y: 3.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 1
+        position: {x: -3.8, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 1
+        position: {x: -1, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 2
+        position: {x: 2, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 2
+        position: {x: -6.3, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 2
+        position: {x: 7.5, y: 4, z: 0}
+        isMovingRight: 1
     - dataCrab: []
-      dataShooter: []
-      dataStalker: []
+      dataShooter:
+      - difficulty: 2
+        position: {x: 4.4, y: 3.3, z: 0}
+        isMovingRight: 0
+      dataStalker:
+      - difficulty: 2
+        position: {x: -3.8, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 2
+        position: {x: -1, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 2
+        position: {x: 2, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 2
+        position: {x: -6.3, y: 4, z: 0}
+        isMovingRight: 1
+      - difficulty: 2
+        position: {x: 7.5, y: 4, z: 0}
+        isMovingRight: 1

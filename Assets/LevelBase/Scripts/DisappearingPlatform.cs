@@ -237,8 +237,11 @@ public class DisapperingPlatform : MonoBehaviour, IRefreshable
 
         foreach (SpriteRenderer sr in srs)
         {
-            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
-            sr.enabled = true;
+            if (sr != null)
+            {
+                sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
+                sr.enabled = true;
+            }
         }
 
         boxCol.enabled = true;

@@ -229,7 +229,9 @@ MonoBehaviour:
   flipThreshold: 0.2
   sr: {fileID: 3189673642457127704}
   cColl: {fileID: 2202692559905826287}
-  HPs: 030000000400000005000000
+  sightMask:
+    serializedVersion: 2
+    m_Bits: 64
   speeds:
   - 1.5
   - 2

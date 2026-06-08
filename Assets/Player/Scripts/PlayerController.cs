@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
 
     private Vector2 moveInput;
-    private bool canMove = true;
+    private bool canAct = true;
 
     [Header("Ground")]
     public bool isGrounded = false;
@@ -62,76 +62,128 @@ public class PlayerMovement : MonoBehaviour
     {
         inputActions = new PlayerInputActions();
 
-        inputActions.Player.Move.performed += ctx => Move(ctx.ReadValue<Vector2>());
+        inputActions.Player.Move.performed += ctx =>
+        {
+            if (canAct)
+            {
+                Move(ctx.ReadValue<Vector2>());
+            }
+        };
+
         inputActions.Player.Move.canceled += ctx => moveInput = Vector2.zero;
 
-        inputActions.Player.Jump.performed += ctx => jumpBufferCounter = jumpBufferTime;
-        inputActions.Player.Jump.canceled += ctx => OnJumpReleased();
+        inputActions.Player.Jump.performed += ctx =>
+        {
+            if (canAct)
+            {
+                jumpBufferCounter = jumpBufferTime;
+            }
+        }; 
+
+        inputActions.Player.Jump.canceled += ctx =>
+        {
+            if (canAct)
+            {
+                OnJumpReleased();
+            }
+        }; 
 
         inputActions.Player.Dash.performed += ctx =>
         {
-            if (canDash && !isDashing)
+            if (canAct && canDash && !isDashing)
             {
                 StartCoroutine(Dash());
             }
         };
 
-        inputActions.Player.Shoot.performed += ctx => isShooting = true;
-        inputActions.Player.Shoot.canceled += ctx => isShooting = false;
+        inputActions.Player.Shoot.performed += ctx =>
+        {
+            if (canAct)
+            {
+                isShooting = true;
+            }
+        };
+
+        inputActions.Player.Shoot.canceled += ctx =>
+        {
+            if (canAct)
+            {
+                isShooting = false;
+            }
+        };
+
+        inputActions.Player.Pause.performed += ctx =>
+        {
+            if (canAct)
+            {
+                DisableMovement();
+            }
+            else
+            {
+                AbleMovement();
+
+            }
+        };
 
         inputActions.Player.Teleport.performed += ctx =>
         {
-            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(
+            if (canAct)
+            {
+                Vector3 worldPosition = Camera.main.ScreenToWorldPoint(
                 UnityEngine.InputSystem.Mouse.current.position.ReadValue());
-            worldPosition.z = transform.position.z;
+                worldPosition.z = transform.position.z;
 
-            transform.position = worldPosition;
+                transform.position = worldPosition;
+            }
         };
     }
     void Update()
     {
-        if (!isGrounded)
+        if (canAct)
         {
-            coyoteTimeCounter -= Time.deltaTime;
-        }
-        else
-        {
-            coyoteTimeCounter = coyoteTime;
-        }
-
-        if (jumpBufferCounter > 0f)
-        {
-            jumpBufferCounter -= Time.deltaTime;
-        }
-
-        if (isShooting)
-        {
-            if (Time.time >= lastTimeShoot + fireRate)
+            if (!isGrounded)
             {
-                lastTimeShoot = Time.time;
-
-                shootAnimCoroutine = StartCoroutine(ShootAnimationRoutine());
-
-                var bullet = Instantiate(bulletPrefab, shootTransform.position, shootTransform.rotation);
-
-                Vector3 mouseScreenPos = Mouse.current.position.ReadValue();
-                mouseScreenPos.z = 0f;
-
-                Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(mouseScreenPos);
-
-                Vector2 dir = (mouseWorld - shootTransform.position).normalized;
-
-                bullet.GetComponent<PlayerBullet>().Init(dir);
+                coyoteTimeCounter -= Time.deltaTime;
             }
+            else
+            {
+                coyoteTimeCounter = coyoteTime;
+            }
+
+            if (jumpBufferCounter > 0f)
+            {
+                jumpBufferCounter -= Time.deltaTime;
+            }
+
+            if (isShooting)
+            {
+                if (Time.time >= lastTimeShoot + fireRate)
+                {
+                    lastTimeShoot = Time.time;
+
+                    shootAnimCoroutine = StartCoroutine(ShootAnimationRoutine());
+
+                    var bullet = Instantiate(bulletPrefab, shootTransform.position, shootTransform.rotation);
+
+                    Vector3 mouseScreenPos = Mouse.current.position.ReadValue();
+                    mouseScreenPos.z = 0f;
+
+                    Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(mouseScreenPos);
+
+                    Vector2 dir = (mouseWorld - shootTransform.position).normalized;
+
+                    bullet.GetComponent<PlayerBullet>().Init(dir);
+                }
+            }
+
+            HandleJump();
+
+            HandleAnimations();
         }
-
-        HandleJump();
-
-        HandleAnimations();
     }
     void FixedUpdate()
     {
-        if (!isDashing && canMove)
+        if (!isDashing && canAct)
         {
             rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
         }
@@ -262,12 +314,21 @@ public class PlayerMovement : MonoBehaviour
 
     public void DisableMovement()
     {
-        canMove = false;
+        canAct = false;
         canDash = false;
         isDashing = false;
 
         rb.linearVelocity = Vector2.zero;
         rb.bodyType = RigidbodyType2D.Kinematic;
+    }
+
+    public void AbleMovement()
+    {
+        canAct = true;
+        canDash = true;
+        isDashing = true;
+
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     void OnEnable() => inputActions.Enable();

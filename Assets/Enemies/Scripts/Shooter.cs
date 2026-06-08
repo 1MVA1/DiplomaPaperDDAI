@@ -37,7 +37,6 @@ public class Shooter : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
     public float wallCheckDistance = 0.25f;
 
     [Header("Diff")]
-    public int[] HPs = { 3, 4, 5 };
     public float[] speeds = { 0.8f, 1f, 1.1f };
     public float fireRate = 1.5f;
     public float shootAnimTime = 0.5f;
@@ -45,7 +44,7 @@ public class Shooter : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
     private Vector3 startPosition;
     private bool startIsMovingRight;
 
-    private int HP;
+    private int HP = 3;
     private float speed;
 
     private bool isAlive = true;
@@ -97,7 +96,6 @@ public class Shooter : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
         srBody.sprite = spritesHead1[idx];
         srLegs.sprite = spritesLegs1[idx];
 
-        HP = HPs[idx];
         speed = speeds[idx];
 
         MakeFlip();
@@ -430,7 +428,7 @@ public class Shooter : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
         isMovingRight = startIsMovingRight;
         player = null;
 
-        HP = HPs[idx];
+        HP = 3;
 
         srBody.enabled = true;
         srLegs.enabled = true;

@@ -197,7 +197,6 @@ MonoBehaviour:
   wallCheck: {fileID: 275258039495408788}
   groundCheckDistance: 0.25
   wallCheckDistance: 0.15
-  HPs: 030000000400000005000000
   speeds:
   - 0.8
   - 1

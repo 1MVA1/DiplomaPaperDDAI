@@ -21,20 +21,21 @@ public class Stalker : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
     public SpriteRenderer sr;
     public CapsuleCollider2D cColl;
 
+    public LayerMask sightMask;
+
     [Header("Diff")]
-    public int[] HPs = { 3, 4, 5 };
     public float[] speeds = { 0.5f, 0.75f, 0.75f };
     public float[] transparencies = { 1f, 0.7f, 0.4f };
 
     private float speed = 0f;
-    private int HP;
+    private int HP = 3;
 
     private Vector3 startPosition;
     private bool isMovingRightStart;
 
     private Coroutine startDelayCoroutine;
 
-    private Transform playerTransform;
+    private Transform player;
 
     private bool canSeePlayer = false;
     private bool isAlive = true;
@@ -82,8 +83,6 @@ public class Stalker : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
         color.a = transparencies[idx];
         sr.color = color;
 
-        HP = HPs[idx];
-
         MakeFlip();
     }
     public void ApplyDiff(Diff diff_, bool isMovingRight_)
@@ -119,14 +118,16 @@ public class Stalker : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
             timer = 0;
         }
 
-        if (!canSeePlayer || playerTransform == null)
+        CheckCanSee();
+
+        if (!canSeePlayer || player == null)
         {
             return;
         }
 
-        transform.position += (playerTransform.position - transform.position).normalized * speed * Time.deltaTime;
+        transform.position += (player.position - transform.position).normalized * speed * Time.deltaTime;
 
-        float distanceX = playerTransform.position.x - transform.position.x;
+        float distanceX = player.position.x - transform.position.x;
 
         if (Mathf.Abs(distanceX) > flipThreshold && (distanceX > 0 && !isMovingRight 
             || distanceX < 0 && isMovingRight))
@@ -134,6 +135,35 @@ public class Stalker : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
             isMovingRight = !isMovingRight;
 
             MakeFlip();
+        }
+    }
+    private void CheckCanSee()
+    {
+        if (canSeePlayer || player == null)
+        {
+            return;
+        }
+
+        Transform[] points = { player.Find("CheckTop"), player.Find("CheckCenter"), player.Find("CheckBottom") };
+
+        foreach (Transform point in points)
+        {
+            if (point == null)
+            {
+                continue;
+            }
+
+            Vector2 dir = point.position - transform.position;
+
+            float dist = dir.magnitude;
+
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir.normalized, dist, sightMask);
+
+            if (hit.collider == null)
+            {
+                canSeePlayer = true;
+                return;
+            }
         }
     }
 
@@ -152,6 +182,19 @@ public class Stalker : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
     public void TakeDamage()
     {
         HP -= 1;
+
+        if (player == null)
+        {
+            GameObject playerGO = GameObject.Find("Player(Clone)");
+
+            if (playerGO == null)
+            {
+                Debug.LogError("Stalker: Player not found on scene!");
+                return;
+            }
+
+            player = playerGO.transform;
+        }
 
         sr.color = damageColor;
 
@@ -214,16 +257,6 @@ public class Stalker : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
 
     public void TurnOn()
     {
-        GameObject playerGO = GameObject.Find("Player(Clone)");
-
-        if (playerGO == null)
-        {
-            Debug.LogError("Stalker: Player not found on scene!");
-            return;
-        }
-
-        playerTransform = playerGO.transform;
-
         isOn = true;
     }
     public void TurnOff()
@@ -241,7 +274,7 @@ public class Stalker : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
 
         sr.color = originalColor;
 
-        HP = HPs[idx];
+        HP = 3;
 
         transform.position = startPosition;
         isMovingRight = isMovingRightStart;
@@ -258,7 +291,17 @@ public class Stalker : MonoBehaviour, IApplyDiff_Enemy, IRefreshable
     {
         if (other.CompareTag("Player"))
         {
-            canSeePlayer = true;
+            player = other.transform;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (!canSeePlayer)
+            {
+                player = null;
+            }
         }
     }
 }

@@ -1,18 +1,16 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
-    
-    [Header("Debug")]
-    public bool wasInMenu = false;
 
     [Header("Config")]
     public LevelsConfig config;
+
+    public PauseManager pause;
 
     private int levelIndex = 0;
 
@@ -35,10 +33,9 @@ public class LevelManager : MonoBehaviour
 
     public void LoadLevel(int levelIndex_)
     {
-        wasInMenu = true;
         levelIndex = levelIndex_;
 
-        if (SaveManager.Instance.levelIndex > 18)
+        if (SaveManager.Instance.levelIndex == 18)
         {
             SceneManager.LoadScene("Menu");
         }
@@ -136,10 +133,14 @@ public class LevelManager : MonoBehaviour
         }
 
         OnLevelReady?.Invoke();
+
+        pause.isInGame = true;
     }
 
     public void LoadNextLevel(float time) 
     {
+        pause.isInGame = false;
+
         var sm = SaveManager.Instance;
 
         if (DDA_Connection.Instance.isConnected)
@@ -164,7 +165,7 @@ public class LevelManager : MonoBehaviour
 
             float done = 0.0f;
 
-            if (sm.levelIndex == 18)
+            if (sm.levelIndex == 17)
             {
                 done = 1.0f;
             }
@@ -219,8 +220,6 @@ public class LevelManager : MonoBehaviour
         var sm = SaveManager.Instance;
 
         sm.levelIndex++;
-
-        Debug.Log(sm.levelIndex);
 
         LoadLevel(sm.levelIndex);
     }

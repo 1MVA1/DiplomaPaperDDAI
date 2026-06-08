@@ -23,8 +23,11 @@ public class PlatformDownLogic : MonoBehaviour
 
             if (ctx.ReadValue<Vector2>().y < 0)
             {
-                Physics2D.IgnoreCollision(playerCol, boxCol, true);
-                Physics2D.IgnoreCollision(playerBotCol, boxCol, true);
+                if (playerCol != null)
+                {
+                    Physics2D.IgnoreCollision(playerCol, boxCol, true);
+                    Physics2D.IgnoreCollision(playerBotCol, boxCol, true);
+                }
             }
         };
 
